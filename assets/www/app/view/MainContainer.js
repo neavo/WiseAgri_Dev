@@ -5,6 +5,11 @@ Ext.define("Project.view.MainContainer", {
 		layout : {
 			type : "card",
 		},
-		html : "Hello World!",
+		items : [{
+				xtype : "HomeView",
+			}, {
+				xtype : "LoginSelect",
+			},
+		],
 	},
 });

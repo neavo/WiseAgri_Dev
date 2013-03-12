@@ -1,13 +1,20 @@
 Ext.application({
 	name : "Project",
 
-	requires : [],
+	requires : [
+		"Ext.Toolbar",
+		"Ext.field.Text",
+		"Ext.form.FieldSet",
+	],
 
 	models : [],
 
 	stores : [],
 
 	views : [
+		"LoginView.LoginSelect",
+		"HomeView.HomeView",
+		
 		"MainContainer",
 	],
 
