@@ -1,0 +1,311 @@
+/*
+	顶部Toolbar样式
+*/
+.TopBar {
+	background :  #2BA4E6;
+	color : white;
+	border-top : 1px solid #808080;
+	border-bottom : 1px solid #808080;
+}
+
+/*
+	底部Toolbar样式
+*/
+.BottomBar {
+	background :  #2BA4E6;
+	color : white;
+	border-top : 1px solid #808080;
+	border-bottom : 1px solid #808080;
+}
+
+/*
+	主页图标样式
+*/
+.homeViewIcon {
+	width : 100%;
+	height : 100%;
+}
+
+/*
+	订购页面图标样式
+*/
+.orderViewIconContainer {
+	width : 5.2em;
+	height : 5.2em;
+}
+.orderViewIcon {
+	width : 5.2em;
+	height : 5.2em;
+}
+.orderViewIconOverlay {
+	width : 5.2em;
+	height : 5.2em;
+	position : relative;
+	top : -5.4em;
+}
+
+/*
+	意见反馈样式
+*/
+.FeedBackTitle {
+	text-align : left;
+	font-size : 0.75em;
+	line-height : 1.1em;
+	height : 1.1em;
+	overflow : hidden;
+}
+.FeedBackContent {
+	text-align : left;
+	font-size : 0.75em;
+	line-height : 1.1em;
+	height : 5.4em;
+	overflow : hidden;
+}
+
+/*
+	子频道列表页面样式
+*/
+.categoryListIcon {
+	width : 2.5em;
+	height : 2.5em;
+	float : left;
+	margin-bottom : 0.5em;
+}
+.categoryListName {
+	font-size : 1.2em;
+	padding-top : 0.45em;
+	padding-left : 1em;
+	overflow : hidden;
+}
+.categoryListDisclosure {
+	float : right;
+	max-width : 1.5em;
+	max-height : 1.5em;
+	margin-right : 0.5em;
+	margin-top : 0.5em;
+}
+
+/*
+	新闻列表样式
+*/
+.newsListIcon {
+	float : left;
+	width : 3.5em;
+	height : 3.5em;
+	margin-bottom : 0.5em;
+}
+.newsListTitle {
+	text-align : left;
+	font-size : 0.85em;
+	line-height : 1.1em;
+	height : 2.2em;
+	padding-left : 0.9em;
+	margin-bottom : 0.2em;
+	overflow : hidden;
+}
+.newsListDatePubliser {
+	text-align : left;
+	font-size : 0.65em;
+	color :  #808080;
+	padding-left : 1.2em;
+	overflow : hidden;
+}
+
+/*
+	新闻详细视图样式
+*/
+.newsDetailTitle {
+	color : #000000;
+   	text-align : center;
+	padding-top : 0.5em;
+	padding-left : 1.5em;
+	padding-right : 1.5em;
+   	font-size : 1.1em;
+}
+.newsDetailDataTime {
+	color : #808080;
+	margin-top : 0.5em;
+	margin-bottom : 0.5em;
+   	text-align : center;
+   	font-size : 0.6em;
+}
+.newsDetailImage {
+	padding-top : 0.5em;
+	max-width : 100%;
+	display : block;
+	margin : auto;
+}
+.newsDetailImageOverlay {
+	width : 18em;
+	height : 3em;
+	display : block;
+	margin : auto;
+	position: relative;
+	top : -3em;
+}
+.newsDetailContentSmaller {
+    font-size : 0.8em;
+}
+.newsDetailContentSmall {
+    font-size : 0.8em;
+}
+.newsDetailContentNormal {
+	font-size : 0.9em;
+}
+.newsDetailContentBig {
+    font-size : 1.2em;
+}
+.newsDetailContentBigger {
+    font-size : 1.4em;
+}
+
+/*
+	供求列表样式
+*/
+.SnBListIcon {
+	float : left;
+	width : 3.5em;
+	height : 3.5em;
+	margin-bottom : 0.5em;
+}
+.SnBListTitle {
+	text-align : left;
+	font-size : 0.85em;
+	line-height : 1.1em;
+	height : 2.2em;
+	padding-left : 0.9em;
+	margin-bottom : 0.2em;
+	overflow : hidden;
+}
+.SnBListTimePubliser {
+	text-align : left;
+	font-size : 0.65em;
+	color :  #808080;
+	padding-left : 1.2em;
+	overflow : hidden;
+}
+
+/*
+	供求详细视图样式
+*/
+.SnBDetailTitle {
+	color : #000000;
+   	text-align : center;
+	padding-top : 0.5em;
+	padding-left : 1.5em;
+	padding-right : 1.5em;
+   	font-size : 1.1em;
+}
+.SnBDetailTimePubliser {
+	color : #808080;
+	margin-top : 0.5em;
+	margin-bottom : 0.5em;
+   	text-align : center;
+   	font-size : 0.6em;
+}
+.SnBDetailContentNormal {
+	font-size : 0.9em;
+}
+.SnBDetailImage {
+	max-width : 100%;
+	display : block;
+	margin : auto;
+}
+
+/*
+	问答列表样式
+*/
+.QnAListIcon {
+	float : left;
+	width : 3.5em;
+	height : 3.5em;
+	margin-bottom : 0.5em;
+}
+.QnAListTitle {
+	text-align : left;
+	font-size : 0.85em;
+	line-height : 1.1em;
+	height : 2.2em;
+	padding-left : 0.9em;
+	margin-bottom : 0.2em;
+	overflow : hidden;
+}
+.QnAListTimePubliser {
+	text-align : left;
+	font-size : 0.65em;
+	color :  #808080;
+	padding-left : 1.2em;
+	overflow : hidden;
+}
+
+/*
+	供求详细视图样式
+*/
+.QnADetailContentNormal {
+	font-size : 0.9em;
+}
+.QnADetailImage {
+	max-width : 100%;
+	display : block;
+	margin : auto;
+}
+
+/*
+	专家列表样式
+*/
+.ExListIcon {
+	float : left;
+	width : 5em;
+	height : 7.5em;
+	margin-bottom : 0.5em;
+}
+.ExListNamePhone {
+	font-size : 0.8em;
+	padding-left : 0.5em;
+	overflow : hidden;
+}
+.ExListInfo {
+	font-size : 0.8em;
+	padding-left : 0.5em;
+	margin-top : 0.1em;
+	overflow : hidden;
+}
+.ExListIDescription {
+	font-size : 0.8em;
+	line-height : 1.2em;
+	height : 4.8em;
+	padding-left : 0.5em;
+	overflow : hidden;
+}
+
+/*
+	相册视图样式
+*/
+.albumCarousel {
+	background : #262626;
+}
+.albumCarousel .x-carousel-indicator-dark span {
+	background-image: none;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+.albumCarousel .x-carousel-indicator-dark span.x-carousel-indicator-active {
+	background-image: none;
+	background-color: rgba(255, 125, 0, 1);
+}
+.albumImageDiv {
+	width : 95%;
+ 	height : 40%;
+	display : block;
+	margin : auto;
+}
+.albumImage {
+	max-width : 100%;
+ 	max-height : 100%;
+	border : 1px solid #FFFFFF;
+	display : block;
+	margin : auto;
+}
+.albumSpacerImage {
+	max-width : 100%;
+ 	max-height : 100%;
+}
