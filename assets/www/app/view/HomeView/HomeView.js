@@ -24,22 +24,22 @@ Ext.define("Project.view.HomeView.HomeView", {
 								xtype : "spacer",
 							}, {
 								xtype : "container",
-								width : Ext.Viewport.getWindowWidth() * 0.33,
-								height : Ext.Viewport.getWindowWidth() * 0.33,
+								width : Ext.Viewport.getWindowWidth() * 0.3333,
+								height : Ext.Viewport.getWindowWidth() * 0.3333,
 								html : "<img class = HomeViewIcon src = data/Icon/01.png />",
 							}, {
 								xtype : "spacer",
 							}, {
 								xtype : "container",
-								width : Ext.Viewport.getWindowWidth() * 0.33,
-								height : Ext.Viewport.getWindowWidth() * 0.33,
+								width : Ext.Viewport.getWindowWidth() * 0.3333,
+								height : Ext.Viewport.getWindowWidth() * 0.3333,
 								html : "<img class = HomeViewIcon src = data/Icon/02.png />",
 							}, {
 								xtype : "spacer",
 							}, {
 								xtype : "container",
-								width : Ext.Viewport.getWindowWidth() * 0.33,
-								height : Ext.Viewport.getWindowWidth() * 0.33,
+								width : Ext.Viewport.getWindowWidth() * 0.3333,
+								height : Ext.Viewport.getWindowWidth() * 0.3333,
 								html : "<img class = HomeViewIcon src = data/Icon/03.png />",
 							}, {
 								xtype : "spacer",
@@ -54,22 +54,22 @@ Ext.define("Project.view.HomeView.HomeView", {
 								xtype : "spacer",
 							}, {
 								xtype : "container",
-								width : Ext.Viewport.getWindowWidth() * 0.33,
-								height : Ext.Viewport.getWindowWidth() * 0.33,
+								width : Ext.Viewport.getWindowWidth() * 0.3333,
+								height : Ext.Viewport.getWindowWidth() * 0.3333,
 								html : "<img class = HomeViewIcon src = data/Icon/04.png />",
 							}, {
 								xtype : "spacer",
 							}, {
 								xtype : "container",
-								width : Ext.Viewport.getWindowWidth() * 0.33,
-								height : Ext.Viewport.getWindowWidth() * 0.33,
+								width : Ext.Viewport.getWindowWidth() * 0.3333,
+								height : Ext.Viewport.getWindowWidth() * 0.3333,
 								html : "<img class = HomeViewIcon src = data/Icon/05.png />",
 							}, {
 								xtype : "spacer",
 							}, {
 								xtype : "container",
-								width : Ext.Viewport.getWindowWidth() * 0.33,
-								height : Ext.Viewport.getWindowWidth() * 0.33,
+								width : Ext.Viewport.getWindowWidth() * 0.3333,
+								height : Ext.Viewport.getWindowWidth() * 0.3333,
 								html : "<img class = HomeViewIcon src = data/Icon/06.png />",
 							}, {
 								xtype : "spacer",
@@ -84,22 +84,22 @@ Ext.define("Project.view.HomeView.HomeView", {
 								xtype : "spacer",
 							}, {
 								xtype : "container",
-								width : Ext.Viewport.getWindowWidth() * 0.33,
-								height : Ext.Viewport.getWindowWidth() * 0.33,
+								width : Ext.Viewport.getWindowWidth() * 0.3333,
+								height : Ext.Viewport.getWindowWidth() * 0.3333,
 								html : "<img class = HomeViewIcon src = data/Icon/03.png />",
 							}, {
 								xtype : "spacer",
 							}, {
 								xtype : "container",
-								width : Ext.Viewport.getWindowWidth() * 0.33,
-								height : Ext.Viewport.getWindowWidth() * 0.33,
+								width : Ext.Viewport.getWindowWidth() * 0.3333,
+								height : Ext.Viewport.getWindowWidth() * 0.3333,
 								html : "<img class = HomeViewIcon src = data/Icon/01.png />",
 							}, {
 								xtype : "spacer",
 							}, {
 								xtype : "container",
-								width : Ext.Viewport.getWindowWidth() * 0.33,
-								height : Ext.Viewport.getWindowWidth() * 0.33,
+								width : Ext.Viewport.getWindowWidth() * 0.3333,
+								height : Ext.Viewport.getWindowWidth() * 0.3333,
 								html : "<img class = HomeViewIcon src = resources/icons/noIcon.png />",
 							}, {
 								xtype : "spacer",
@@ -117,11 +117,7 @@ Ext.define("Project.view.HomeView.HomeView", {
 				items : [{
 						xtype : "spacer",
 					}, {
-						xtype : "button",
-						icon : "resources/icons/whiteIcon.png",
-						ui : "plain",
-						iconCls : "reply",
-						iconMask : true,
+						xtype : "BackBtn",
 					}, {
 						xtype : "spacer",
 					},

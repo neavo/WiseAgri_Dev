@@ -3,8 +3,11 @@ Ext.application({
 
 	requires : [
 		"Ext.Toolbar",
+		"Ext.MessageBox",
 		"Ext.field.Text",
 		"Ext.form.FieldSet",
+		"Ext.field.Checkbox",
+		"Ext.field.Password",
 	],
 
 	models : [],
@@ -12,6 +15,8 @@ Ext.application({
 	stores : [],
 
 	views : [
+		"Widget.BackBtn",
+		
 		"LoginView.LoginSelect",
 		"HomeView.HomeView",
 		
@@ -19,6 +24,10 @@ Ext.application({
 	],
 
 	controllers : [
+		"Widget.BackBtn",
+	
+		"LoginView.LoginSelect",
+	
 		"MainController",
 	],
 

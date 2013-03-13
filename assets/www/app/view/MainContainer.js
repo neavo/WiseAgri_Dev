@@ -4,11 +4,12 @@ Ext.define("Project.view.MainContainer", {
 	config : {
 		layout : {
 			type : "card",
+			//animation : "slide",
 		},
 		items : [{
-				xtype : "HomeView",
-			}, {
 				xtype : "LoginSelect",
+			}, {
+				xtype : "HomeView",
 			},
 		],
 	},

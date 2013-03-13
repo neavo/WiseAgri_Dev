@@ -2,7 +2,7 @@
 	顶部Toolbar样式
 */
 .TopBar {
-	background : #2BA4E6;
+	background : #33B5E5;
 	color : white;
 	border-top : 1px solid #808080;
 	border-bottom : 1px solid #808080;
@@ -13,20 +13,11 @@
 	底部Toolbar样式
 */
 .BottomBar {
-	background : #2BA4E6;
+	background : #33B5E5;
 	color : white;
 	border-top : 1px solid #808080;
 	border-bottom : 1px solid #808080;
 	-webkit-border-radius : 0.25em;
-}
-
-/*
-	登陆选择按钮样式
-*/
-.LoginSelectBtn {
-	background : #2BA4E6;
-	color : white;
-	border : 1px solid #808080;
 }
 
 /*
