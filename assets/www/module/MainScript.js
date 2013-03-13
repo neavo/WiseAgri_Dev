@@ -11,6 +11,9 @@ document.addEventListener("deviceready", function () {
 
 // 切换页面相关
 DB.History = [];
+function WipeSwitchHistory() {
+	DB.History.splice(0, DB.History.length);
+};
 function SwitchToPrev() {
 	DB.History.pop();
 	if (DB.History.length == 0) {

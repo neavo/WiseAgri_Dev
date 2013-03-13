@@ -4,7 +4,9 @@ Ext.application({
 	requires : [
 		"Ext.Toolbar",
 		"Ext.MessageBox",
+		"Ext.data.Store",
 		"Ext.field.Text",
+		"Ext.dataview.List",
 		"Ext.form.FieldSet",
 		"Ext.field.Checkbox",
 		"Ext.field.Password",
@@ -17,7 +19,7 @@ Ext.application({
 	views : [
 		"Widget.BackBtn",
 		
-		"LoginView.LoginSelect",
+		"LoginView.LoginSelect", "LoginView.RegisterArea", "LoginView.RegisterProduct", "LoginView.RegisterIdentity",
 		"HomeView.HomeView",
 		
 		"MainContainer",
@@ -26,7 +28,8 @@ Ext.application({
 	controllers : [
 		"Widget.BackBtn",
 	
-		"LoginView.LoginSelect",
+		"LoginView.LoginSelect", "LoginView.RegisterArea", "LoginView.RegisterProduct", "LoginView.RegisterIdentity",
+		"HomeView.HomeView",
 	
 		"MainController",
 	],

@@ -1,7 +1,7 @@
 var SplashScreenImageSrc = [
-	"data/SplashScreen/SplashScreen_01.png",
-	"data/SplashScreen/SplashScreen_02.png",
-	"data/SplashScreen/SplashScreen_03.png",
+	"data/SplashScreen/SplashScreen_01.jpg",
+	"data/SplashScreen/SplashScreen_02.jpg",
+	"data/SplashScreen/SplashScreen_03.jpg",
 ];
 
 function HideSplashScreen() {

@@ -9,6 +9,12 @@ Ext.define("Project.view.MainContainer", {
 		items : [{
 				xtype : "LoginSelect",
 			}, {
+				xtype : "RegisterArea",
+			}, {
+				xtype : "RegisterProduct",
+			}, {
+				xtype : "RegisterIdentity",
+			}, {
 				xtype : "HomeView",
 			},
 		],

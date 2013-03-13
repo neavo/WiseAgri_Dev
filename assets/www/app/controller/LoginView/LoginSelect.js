@@ -8,7 +8,13 @@ Ext.define("Project.controller.LoginView.LoginSelect", {
 		Ext.getCmp("DoRegisterBtn").addListener({
 			tap : {
 				fn : function () {
-					SwitchToNext("HomeView");
+					if (Ext.getCmp("UserNameField").getValue() == "") {
+						DoAlert("请输入账号！");
+					} else if (Ext.getCmp("PassWordField").getValue() == "") {
+						DoAlert("请输入密码！");
+					} else {
+						SwitchToNext("RegisterArea");
+					};
 				},
 				element : "element",
 			},
@@ -18,11 +24,9 @@ Ext.define("Project.controller.LoginView.LoginSelect", {
 				fn : function () {
 					if (Ext.getCmp("UserNameField").getValue() == "") {
 						DoAlert("请输入账号！");
-					};
-					if (Ext.getCmp("PassWordField").getValue() == "") {
+					} else if (Ext.getCmp("PassWordField").getValue() == "") {
 						DoAlert("请输入密码！");
-					};
-					if (Ext.getCmp("UserNameField").getValue() != "" && Ext.getCmp("PassWordField").getValue() != "") {
+					} else {
 						SwitchToNext("HomeView");
 					};
 				},

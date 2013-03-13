@@ -4,13 +4,11 @@ Ext.define("Project.view.LoginView.LoginSelect", {
 	config : {
 		layout : "vbox",
 		items : [{
-				id : "LoginSelectTop",
 				xtype : "toolbar",
 				docked : "top",
 				baseCls : "TopBar",
 				title : "智 慧 农 业 • 湖 北",
 			}, {
-				id : "LoginSelectMain",
 				xtype : "fieldset",
 				flex : 1,
 				width : "90%",
@@ -77,7 +75,6 @@ Ext.define("Project.view.LoginView.LoginSelect", {
 					},
 				],
 			}, {
-				id : "LoginSelectBottom",
 				xtype : "toolbar",
 				docked : "bottom",
 				baseCls : "BottomBar",

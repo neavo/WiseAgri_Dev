@@ -29,6 +29,30 @@
 }
 
 /*
+	注册页面列表样式
+*/
+.RegisterListIcon {
+	width : 2.5em;
+	height : 2.5em;
+	float : left;
+	margin-bottom : 0.5em;
+}
+.RegisterListDisclosure {
+	float : right;
+	max-width : 1.5em;
+	max-height : 1.5em;
+	margin-right : 0.5em;
+	margin-top : 0.5em;
+}
+.RegisterListName {
+	font-size : 1.2em;
+	padding-top : 0.45em;
+	padding-left : 1em;
+	overflow : hidden;
+	font-weight : blod;
+}
+
+/*
 	测试用边框
 */
 .TestBorder {
