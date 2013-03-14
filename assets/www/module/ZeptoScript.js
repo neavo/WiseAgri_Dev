@@ -5,6 +5,6 @@
 	};
 
 	$(document).ready(function () {
-		$(".NewsListIcon").css("max-width", DB.ScreenWidth * 0.164 * 0.8 + "px");
+		$(".NewsListIcon").css("max-width", DB.ScreenWidth*0.164*0.8 + "px");
 	});
 }

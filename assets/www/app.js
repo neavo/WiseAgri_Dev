@@ -21,7 +21,7 @@ Ext.application({
 		
 		"LoginView.LoginSelect", "LoginView.RegisterArea", "LoginView.RegisterProduct", "LoginView.RegisterIdentity",
 		"HomeView.HomeView",
-		"NewsView.NewsList",
+		"NewsView.NewsList", "NewsView.NewsDetail",
 		
 		"MainContainer",
 	],
@@ -31,6 +31,7 @@ Ext.application({
 	
 		"LoginView.LoginSelect", "LoginView.RegisterArea", "LoginView.RegisterProduct", "LoginView.RegisterIdentity",
 		"HomeView.HomeView",
+		"NewsView.NewsList",
 	
 		"MainController",
 	],

@@ -3,23 +3,6 @@ var DB = [];
 DB.ScreenWidth = document.body.scrollWidth;
 DB.ScreenHeight = document.body.scrollHeight;
 
-DB.JsonObject = [{
-		"nTitle" : "测试标题 一",
-	}, {
-		"nTitle" : "测试标题 二",
-	}, {
-		"nTitle" : "测试标题 三",
-	}, {
-		"nTitle" : "测试标题 四",
-	}, {
-		"nTitle" : "测试标题 五",
-	}, {
-		"nTitle" : "测试标题 六",
-	}, {
-		"nTitle" : "测试标题 七",
-	},
-];
-
 // PhoneGap相关
 document.addEventListener("deviceready", function () {
 	// 响应返回键
