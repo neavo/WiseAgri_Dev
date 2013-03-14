@@ -17,10 +17,11 @@ Ext.application({
 	stores : [],
 
 	views : [
-		"Widget.BackBtn",
+		"Widget.BackBtn", "Widget.PrevBtn", "Widget.NextBtn",
 		
 		"LoginView.LoginSelect", "LoginView.RegisterArea", "LoginView.RegisterProduct", "LoginView.RegisterIdentity",
 		"HomeView.HomeView",
+		"NewsView.NewsList",
 		
 		"MainContainer",
 	],

@@ -30,7 +30,9 @@ Ext.define("Project.view.LoginView.RegisterProduct", {
 				items : [{
 						xtype : "spacer",
 					}, {
-						xtype : "BackBtn",
+						xtype : "container",
+						height : DB.ScreenHeight * 0.09,
+						html : "<img style = \"margin-top : 5%; height : 90%;\" src = \"resources/icons/TelecomLogo.png\" />",
 					}, {
 						xtype : "spacer",
 					},

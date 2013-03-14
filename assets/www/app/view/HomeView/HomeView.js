@@ -21,7 +21,16 @@ Ext.define("Project.view.HomeView.HomeView", {
 				items : [{
 						xtype : "spacer",
 					}, {
-						xtype : "BackBtn",
+						xtype : "container",
+						height : DB.ScreenHeight * 0.09,
+						html : "<img style = \"margin-top : 5%; height : 90%;\" src = \"resources/icons/AccountBtn.png\" />",
+					}, {
+						xtype : "spacer",
+					}, {
+						id : "DoOrderBtn",
+						xtype : "container",
+						height : DB.ScreenHeight * 0.09,
+						html : "<img style = \"margin-top : 5%; height : 90%;\" src = \"resources/icons/DoOrderBtn.png\" />",
 					}, {
 						xtype : "spacer",
 					},
