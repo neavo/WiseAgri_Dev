@@ -6,7 +6,7 @@ Ext.define("Project.view.LoginView.RegisterArea", {
 		items : [{
 				xtype : "toolbar",
 				docked : "top",
-				baseCls : "TopBar",
+				baseCls : "ToolBar",
 				title : "请选择地域",
 			}, {
 				id : "RegisterAreaMain",
@@ -38,7 +38,7 @@ Ext.define("Project.view.LoginView.RegisterArea", {
 			}, {
 				xtype : "toolbar",
 				docked : "bottom",
-				baseCls : "BottomBar",
+				baseCls : "ToolBar",
 				items : [{
 						xtype : "spacer",
 					}, {

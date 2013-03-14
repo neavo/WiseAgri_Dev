@@ -7,7 +7,7 @@ Ext.define("Project.view.HomeView.HomeView", {
 		items : [{
 				xtype : "toolbar",
 				docked : "top",
-				baseCls : "TopBar",
+				baseCls : "ToolBar",
 				title : "智 慧 农 业 • 湖 北",
 			}, {
 				id : "HomeViewMain",
@@ -17,7 +17,7 @@ Ext.define("Project.view.HomeView.HomeView", {
 			}, {
 				xtype : "toolbar",
 				docked : "bottom",
-				baseCls : "BottomBar",
+				baseCls : "ToolBar",
 				items : [{
 						xtype : "spacer",
 					}, {

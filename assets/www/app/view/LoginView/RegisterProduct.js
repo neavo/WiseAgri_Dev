@@ -6,7 +6,7 @@ Ext.define("Project.view.LoginView.RegisterProduct", {
 		items : [{
 				xtype : "toolbar",
 				docked : "top",
-				baseCls : "TopBar",
+				baseCls : "ToolBar",
 				title : "请选择产品",
 			}, {
 				id : "RegisterProductMain",
@@ -26,7 +26,7 @@ Ext.define("Project.view.LoginView.RegisterProduct", {
 			}, {
 				xtype : "toolbar",
 				docked : "bottom",
-				baseCls : "BottomBar",
+				baseCls : "ToolBar",
 				items : [{
 						xtype : "spacer",
 					}, {

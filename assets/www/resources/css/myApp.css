@@ -1,22 +1,10 @@
 /*
-	顶部Toolbar样式
+	Toolbar样式
 */
-.TopBar {
+.ToolBar {
 	background : #33B5E5;
 	color : white;
-	border-top : 1px solid #808080;
-	border-bottom : 1px solid #808080;
-	-webkit-border-radius : 0.25em;
-}
-
-/*
-	底部Toolbar样式
-*/
-.BottomBar {
-	background : #33B5E5;
-	color : white;
-	border-top : 1px solid #808080;
-	border-bottom : 1px solid #808080;
+	border : 1px solid #808080;
 	-webkit-border-radius : 0.25em;
 }
 

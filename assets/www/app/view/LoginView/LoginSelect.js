@@ -6,7 +6,7 @@ Ext.define("Project.view.LoginView.LoginSelect", {
 		items : [{
 				xtype : "toolbar",
 				docked : "top",
-				baseCls : "TopBar",
+				baseCls : "ToolBar",
 				title : "智 慧 农 业 • 湖 北",
 			}, {
 				xtype : "fieldset",
@@ -77,7 +77,7 @@ Ext.define("Project.view.LoginView.LoginSelect", {
 			}, {
 				xtype : "toolbar",
 				docked : "bottom",
-				baseCls : "BottomBar",
+				baseCls : "ToolBar",
 				items : [{
 						xtype : "spacer",
 					}, {

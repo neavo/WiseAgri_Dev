@@ -6,7 +6,7 @@ Ext.define("Project.view.LoginView.RegisterIdentity", {
 		items : [{
 				xtype : "toolbar",
 				docked : "top",
-				baseCls : "TopBar",
+				baseCls : "ToolBar",
 				title : "请选择用户身份",
 			}, {
 				id : "RegisterIdentityMain",
@@ -24,7 +24,7 @@ Ext.define("Project.view.LoginView.RegisterIdentity", {
 			}, {
 				xtype : "toolbar",
 				docked : "bottom",
-				baseCls : "BottomBar",
+				baseCls : "ToolBar",
 				items : [{
 						xtype : "spacer",
 					}, {
