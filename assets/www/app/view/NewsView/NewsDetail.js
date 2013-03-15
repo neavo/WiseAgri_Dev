@@ -45,6 +45,23 @@ Ext.define("Project.view.NewsView.NewsDetail", {
 					}, {
 						xtype : "container",
 						html : "分享 ...",
+						listeners : {
+							tap : {
+								fn : function () {
+									window.plugins.share.show({
+										subject : "",
+										text : "来自“智慧农业”手机客户端的分享！",
+									},
+										function () {
+										DoAlert("分享成功！");
+									},
+										function () {
+										DoAlert("分享失败！");
+									});
+								},
+								element : "element",
+							},
+						},
 					}, {
 						xtype : "spacer",
 					},

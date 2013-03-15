@@ -3,6 +3,19 @@ var DB = [];
 DB.ScreenWidth = document.body.scrollWidth;
 DB.ScreenHeight = document.body.scrollHeight;
 
+DB.JsonObject = [{
+		"nTitle" : "宜昌市畜牧兽医局举办全市生猪规模化养殖场无害化处理技术培训班"
+	}, {
+		"nTitle" : "宜昌市动物防疫合格证的办理程序"
+	}, {
+		"nTitle" : "宜昌市肉类产品一体化认证需提供的申报材料"
+	}, {
+		"nTitle" : "宜昌市畜牧兽医局举办全市生猪规模化养殖场无害化处理技术培训班"
+	}, {
+		"nTitle" : "宜昌市动物防疫合格证的办理程序"
+	},
+];
+
 // PhoneGap相关
 document.addEventListener("deviceready", function () {
 	// 响应返回键

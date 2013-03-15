@@ -24,6 +24,7 @@ Ext.define("Project.controller.HomeView.HomeView", {
 								tap : {
 									fn : function () {
 										SwitchToNext("NewsList");
+										Ext.getCmp("NewsListMain").setData(DB.JsonObject);
 									},
 									element : "element",
 								},
