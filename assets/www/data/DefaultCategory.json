@@ -1,0 +1,27 @@
+[{
+		"CategoryId" : "923",
+		"CategoryName" : "嘉鱼新闻",
+		"CategoryIconUrl" : "data/DefaultCategory/01.png",
+		"CategoryType" : "NewsCategory",
+	}, {
+		"CategoryId" : "924",
+		"CategoryName" : "嘉鱼旅游",
+		"CategoryIconUrl" : "data/DefaultCategory/02.png",
+		"CategoryType" : "ParentCategory",
+	}, {
+		"CategoryId" : "925",
+		"CategoryName" : "嘉鱼特产",
+		"CategoryIconUrl" : "data/DefaultCategory/03.png",
+		"CategoryType" : "NewsCategory",
+	}, {
+		"CategoryId" : "926",
+		"CategoryName" : "嘉鱼美食",
+		"CategoryIconUrl" : "data/DefaultCategory/04.png",
+		"CategoryType" : "NewsCategory",
+	}, {
+		"CategoryId" : "927",
+		"CategoryName" : "便民服务",
+		"CategoryIconUrl" : "data/DefaultCategory/05.png",
+		"CategoryType" : "NewsCategory",
+	},
+]

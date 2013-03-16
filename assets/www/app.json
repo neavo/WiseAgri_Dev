@@ -103,7 +103,7 @@
 		"data",
 		"module",
         "resources/css",
-        "resources/icons",   
+        "resources/icon",   
     ],
 
     /**

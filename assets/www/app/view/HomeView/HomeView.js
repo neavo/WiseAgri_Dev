@@ -4,6 +4,9 @@ Ext.define("Project.view.HomeView.HomeView", {
 	config : {
 		layout : "vbox",
 		style : "background : white;",
+		defaults : {
+			flex : 1,
+		},
 		items : [{
 				xtype : "toolbar",
 				docked : "top",
@@ -12,7 +15,6 @@ Ext.define("Project.view.HomeView.HomeView", {
 			}, {
 				id : "HomeViewMain",
 				xtype : "container",
-				flex : 1,
 				layout : "vbox",
 			}, {
 				xtype : "toolbar",
@@ -23,14 +25,14 @@ Ext.define("Project.view.HomeView.HomeView", {
 					}, {
 						xtype : "container",
 						height : DB.ScreenHeight * 0.09,
-						html : "<img style = \"margin-top : 5%; height : 90%;\" src = \"resources/icons/AccountBtn.png\" />",
+						html : "<img style = \"margin-top : 5%; height : 90%;\" src = resources/image/FeedBackBtn.png />",
 					}, {
 						xtype : "spacer",
 					}, {
 						id : "DoOrderBtn",
 						xtype : "container",
 						height : DB.ScreenHeight * 0.09,
-						html : "<img style = \"margin-top : 5%; height : 90%;\" src = \"resources/icons/DoOrderBtn.png\" />",
+						html : "<img style = \"margin-top : 5%; height : 90%;\" src = resources/image/DoOrderBtn.png />",
 					}, {
 						xtype : "spacer",
 					},

@@ -1,0 +1,22 @@
+[{
+		"AppId" : "11",
+		"AppName" : "嘉鱼蔬菜",
+		"AppIconUrl" : "data/DefaultApp/01.png",
+		"AppLocation" : "咸宁",
+	}, {
+		"AppId" : "12",
+		"AppName" : "嘉鱼水产",
+		"AppIconUrl" : "data/DefaultApp/02.png",
+		"AppLocation" : "咸宁",
+	}, {
+		"AppId" : "13",
+		"AppName" : "嘉鱼林业",
+		"AppIconUrl" : "data/DefaultApp/03.png",
+		"AppLocation" : "咸宁",
+	}, {
+		"AppId" : "14",
+		"AppName" : "嘉鱼畜牧",
+		"AppIconUrl" : "data/DefaultApp/04.png",
+		"AppLocation" : "咸宁",
+	},
+]

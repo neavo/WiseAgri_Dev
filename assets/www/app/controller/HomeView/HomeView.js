@@ -15,11 +15,27 @@ Ext.define("Project.controller.HomeView.HomeView", {
 					layout : "hbox",
 				});
 			for (j = 0; j < 3; j++) {
-				if (data[k]) {
+				HContainer.add(Ext.create("Ext.Spacer"));
+				if (data[k] && data[k]["CategoryIconUrl"]) {
 					HContainer.add(Ext.create("Ext.Container", {
-							width : DB.ScreenWidth * 0.3333,
-							height : DB.ScreenWidth * 0.3333,
-							html : "<img class = HomeViewIcon src = data/Icon/" + data[k] + ".png />",
+							width : DB.ScreenWidth * 0.275,
+							height : DB.ScreenWidth * 0.275,
+							html : "<img class = HomeViewIcon src = " + data[k]["CategoryIconUrl"] + " />",
+							listeners : {
+								tap : {
+									fn : function () {
+										SwitchToNext("NewsList");
+										StoreLoad(Ext.getCmp("NewsListMain").getStore(), 1);
+									},
+									element : "element",
+								},
+							},
+						}));
+				} else if (data[k] && data[k]["AppIconUrl"]) {
+					HContainer.add(Ext.create("Ext.Container", {
+							width : DB.ScreenWidth * 0.275,
+							height : DB.ScreenWidth * 0.275,
+							html : "<img class = HomeViewIcon src = " + data[k]["AppIconUrl"] + " />",
 							listeners : {
 								tap : {
 									fn : function () {
@@ -32,19 +48,26 @@ Ext.define("Project.controller.HomeView.HomeView", {
 						}));
 				} else {
 					HContainer.add(Ext.create("Ext.Container", {
-							width : DB.ScreenWidth * 0.3333,
-							height : DB.ScreenWidth * 0.3333,
-							html : "<img class = HomeViewIcon src = resources/icons/noIcon.png />",
+							width : DB.ScreenWidth * 0.275,
+							height : DB.ScreenWidth * 0.275,
+							html : "<img class = HomeViewIcon src = resources/image/NoIcon.png />",
 						}));
 				};
 				k = k + 1;
 			};
+			HContainer.add(Ext.create("Ext.Spacer"));
 			container.add(HContainer);
 		};
 		container.add(Ext.create("Ext.Spacer"));
 	},
 	launch : function () {
-		var data = ["01", "02", "03", "04", "05", "06", "03", "01"];
-		this.SetGrid(data, Ext.getCmp("HomeViewMain"));
+		var THIS = this;
+		var handle = setInterval(function () {
+				if (DB.DefaultBaseLoaded && DB.DefaultAppLoaded && DB.DefaultCategoryLoaded) {
+					THIS.SetGrid(DB.DefaultCategory.concat(DB.DefaultApp), Ext.getCmp("HomeViewMain"));
+					clearInterval(handle);
+				};
+			}, 50);
+
 	},
 });

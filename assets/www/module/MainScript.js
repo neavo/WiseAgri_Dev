@@ -1,20 +1,46 @@
-// 本地DateBase
+// 服务器数据相关
+//var ServerUrl = "http://221.235.190.13:8080/WiseAgriAjax/";
+var ServerUrl = "http://192.168.1.101:8081/WiseAgriAjax/";
+
+// 本地DateBase相关
 var DB = [];
 DB.ScreenWidth = document.body.scrollWidth;
 DB.ScreenHeight = document.body.scrollHeight;
 
-DB.JsonObject = [{
-		"nTitle" : "宜昌市畜牧兽医局举办全市生猪规模化养殖场无害化处理技术培训班"
-	}, {
-		"nTitle" : "宜昌市动物防疫合格证的办理程序"
-	}, {
-		"nTitle" : "宜昌市肉类产品一体化认证需提供的申报材料"
-	}, {
-		"nTitle" : "宜昌市畜牧兽医局举办全市生猪规模化养殖场无害化处理技术培训班"
-	}, {
-		"nTitle" : "宜昌市动物防疫合格证的办理程序"
-	},
-];
+// 本地数据读取相关
+DB.DefaultBase = [];
+DB.DefaultBaseLoaded = false;
+function GetDefaultBase() {
+	Ext.Ajax.request({
+		url : "data/DefaultBase.json",
+		success : function (response) {
+			DB.DefaultBase = eval("(" + response.responseText + ")");
+			DB.DefaultBaseLoaded = true;
+		},
+	});
+};
+DB.DefaultApp = [];
+DB.DefaultAppLoaded = false;
+function GetDefaultApp() {
+	Ext.Ajax.request({
+		url : "data/DefaultApp.json",
+		success : function (response) {
+			DB.DefaultApp = eval("(" + response.responseText + ")");
+			DB.DefaultAppLoaded = true;
+		},
+	});
+};
+DB.DefaultCategory = [];
+DB.DefaultCategoryLoaded = false;
+function GetDefaultCategory() {
+	Ext.Ajax.request({
+		url : "data/DefaultCategory.json",
+		success : function (response) {
+			DB.DefaultCategory = eval("(" + response.responseText + ")");
+			DB.DefaultCategoryLoaded = true;
+		},
+	});
+};
 
 // PhoneGap相关
 document.addEventListener("deviceready", function () {
@@ -26,9 +52,6 @@ document.addEventListener("deviceready", function () {
 
 // 切换页面相关
 DB.History = [];
-function WipeSwitchHistory() {
-	DB.History.splice(0, DB.History.length);
-};
 function SwitchToPrev() {
 	DB.History.pop();
 	if (DB.History.length == 0) {
@@ -51,7 +74,28 @@ function SwitchToNext(View) {
 	DB.MainContainer.setActiveItem(View);
 };
 
-// 自定义的Alert
+// Alert相关
 function DoAlert(msg) {
 	Ext.Msg.alert("", msg);
+};
+
+// Store相关
+DB.ActivatedStore = "";
+function StoreLoad(Store, Page) {
+	DB.ActivatedStore = Store;
+	Store.getProxy().setExtraParams({
+		"CategoryId" : "923",
+	});
+	Store.loadPage(Page);
+};
+
+// 自定义的LoadMasked相关
+function ShowMasked() {
+	Ext.Viewport.setMasked({
+		xtype : "loadmask",
+		message : "载入中 ...",
+	});
+};
+function HideMasked() {
+	Ext.Viewport.setMasked(false);
 };

@@ -12,27 +12,29 @@ Ext.application({
 		"Ext.field.Password",
 	],
 
-	models : [],
+	models : [
+		"NewsObejct",
+	],
 
-	stores : [],
+	stores : [
+		"NewsList",
+	],
 
 	views : [
-		"Widget.BackBtn", "Widget.PrevBtn", "Widget.NextBtn",
-		
-		"LoginView.LoginSelect", "LoginView.RegisterArea", "LoginView.RegisterProduct", "LoginView.RegisterIdentity",
+		"Widget.PrevBtn", "Widget.NextBtn", "Widget.ShareBtn",
+
 		"HomeView.HomeView",
 		"NewsView.NewsList", "NewsView.NewsDetail",
-		
+
 		"MainContainer",
 	],
 
 	controllers : [
-		"Widget.BackBtn",
-	
-		"LoginView.LoginSelect", "LoginView.RegisterArea", "LoginView.RegisterProduct", "LoginView.RegisterIdentity",
+		"Widget.PrevBtn", "Widget.NextBtn", "Widget.ShareBtn",
+
 		"HomeView.HomeView",
 		"NewsView.NewsList",
-	
+
 		"MainController",
 	],
 
