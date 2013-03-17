@@ -1,26 +1,26 @@
-Ext.define("Project.view.NewsView.NewsList", {
+Ext.define("Project.view.SnBView.SnBList", {
 	extend : "Ext.Container",
-	xtype : "NewsList",
+	xtype : "SnBList",
 	config : {
 		layout : "vbox",
 		defaults : {
 			flex : 1,
 		},
 		items : [{
-				id : "NewsListTop",
+				id : "SnBListTop",
 				xtype : "toolbar",
 				docked : "top",
 				baseCls : "ToolBar",
 			}, {
-				id : "NewsListMain",
+				id : "SnBListMain",
 				xtype : "list",
-				store : "NewsList",
+				store : "SnBList",
 				emptyText : "没有更多信息 ...",
 				loadingText : "正在获取信息...",
-				itemTpl : "<img class = NewsListIcon onerror = \" this.src = 'resources/image/DefaultIcon.png' \" src = {NewsIconUrl} />"
-				 + "<p class = NewsListTitle>{NewsTitle}</p>"
-				 + "<p class = NewsListDatePubliser>时间：{NewsDateTime}</p>"
-				 + "<p class = NewsListDatePubliser>来源：{NewsPublisher}</p>",
+				itemTpl : "<img class = SnBListIcon onerror = \" this.src = 'resources/image/DefaultIcon.png' \" src = {SnBIconUrl} />"
+				 + "<div class = SnBListTitle><b>[{SnBType}] {SnBTitle}</b></div>"
+				 + "<div class = SnBListTimePubliser>时间：{SnBDateTime}</div>"
+				 + "<div class = SnBListTimePubliser>联系人：{SnBPublisher}</div>",
 			}, {
 				xtype : "toolbar",
 				docked : "bottom",

@@ -39,7 +39,6 @@
 	margin-top : 1em;
 }
 
-
 /*
 	新闻列表页面样式
 */
@@ -77,20 +76,12 @@
 	padding-right : 1.5em;
    	font-size : 1.1em;
 }
-.NewsDetailDataTime {
+.NewsDetailDataTimePublisher {
 	color : #808080;
 	margin-top : 0.5em;
 	margin-bottom : 0.5em;
    	text-align : center;
    	font-size : 0.6em;
-}
-.NewsDetailImage {
-	margin-top : 1em;
-	max-width : 97.5%;
-	display : block;
-	margin : auto;
-	border : 1.5px solid #33B5E5;
-	-webkit-border-radius : 0.25em;
 }
 .NewsDetailContent {
 	width : 97.5%;
@@ -101,6 +92,77 @@
 	margin : auto;
 	text-align : justify;
 	text-justify : inter-ideograph;
+}
+.NewsDetailImage {
+	margin-top : 1em;
+	max-width : 97.5%;
+	display : block;
+	margin : auto;
+	border : 1.5px solid #33B5E5;
+	-webkit-border-radius : 0.25em;
+}
+
+/*
+	供求列表样式
+*/
+.SnBListIcon {
+	float : left;
+	width : 3.5em;
+	height : 3.5em;
+	margin-bottom : 0.5em;
+}
+.SnBListTitle {
+	text-align : left;
+	font-size : 0.85em;
+	line-height : 1.1em;
+	height : 2.2em;
+	padding-left : 0.9em;
+	margin-bottom : 0.2em;
+	overflow : hidden;
+}
+.SnBListTimePubliser {
+	text-align : left;
+	font-size : 0.65em;
+	color :  #808080;
+	padding-left : 1.2em;
+	overflow : hidden;
+}
+
+/*
+	供求详细视图样式
+*/
+.SnBDetailTitle {
+	color : #000000;
+   	text-align : center;
+	padding-top : 0.5em;
+	padding-left : 1.5em;
+	padding-right : 1.5em;
+   	font-size : 1.1em;
+}
+.SnBDetailDataTimePubliser {
+	color : #808080;
+	margin-top : 0.5em;
+	margin-bottom : 0.5em;
+   	text-align : center;
+   	font-size : 0.6em;
+}
+.SnBDetailContent {
+	width : 97.5%;
+	font-size : 0.9em;
+	letter-spacing: 0.1em;
+	line-height : 1.3em;
+	display : block;
+	margin : auto;
+	text-align : justify;
+	text-justify : inter-ideograph;
+}
+.SnBDetailImage {
+	margin-top : 1em;
+	max-width : 97.5%;
+	display : block;
+	margin : auto;
+	border : 1.5px solid #33B5E5;
+	-webkit-border-radius : 0.25em;
 }
 
 /*

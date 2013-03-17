@@ -9,11 +9,15 @@ Ext.define("Project.view.MainContainer", {
 		items : [{
 				xtype : "HomeView",
 			}, {
+				xtype : "CategoryList",
+			}, {
 				xtype : "NewsList",
 			}, {
 				xtype : "NewsDetail",
 			}, {
-				xtype : "CategoryList",
+				xtype : "SnBList",
+			}, {
+				xtype : "SnBDetail",
 			},
 		],
 	},

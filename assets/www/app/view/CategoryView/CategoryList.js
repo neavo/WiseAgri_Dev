@@ -1,26 +1,25 @@
-Ext.define("Project.view.NewsView.NewsList", {
+Ext.define("Project.view.CategoryView.CategoryList", {
 	extend : "Ext.Container",
-	xtype : "NewsList",
+	xtype : "CategoryList",
 	config : {
 		layout : "vbox",
 		defaults : {
 			flex : 1,
 		},
 		items : [{
-				id : "NewsListTop",
+				id : "CategoryListTop",
 				xtype : "toolbar",
 				docked : "top",
 				baseCls : "ToolBar",
 			}, {
-				id : "NewsListMain",
+				id : "CategoryListMain",
 				xtype : "list",
-				store : "NewsList",
+				store : "ChildCategory",
 				emptyText : "没有更多信息 ...",
 				loadingText : "正在获取信息...",
-				itemTpl : "<img class = NewsListIcon onerror = \" this.src = 'resources/image/DefaultIcon.png' \" src = {NewsIconUrl} />"
-				 + "<p class = NewsListTitle>{NewsTitle}</p>"
-				 + "<p class = NewsListDatePubliser>时间：{NewsDateTime}</p>"
-				 + "<p class = NewsListDatePubliser>来源：{NewsPublisher}</p>",
+				itemTpl : "<img class = CategoryListIcon src = {CategoryIconUrl} />"
+				 + "<img class = CategoryListDisclosure src = resources/image/DisclosureIcon.png />"
+				 + "<div class = CategoryListName><b>{CategoryName}</b></div>",
 			}, {
 				xtype : "toolbar",
 				docked : "bottom",

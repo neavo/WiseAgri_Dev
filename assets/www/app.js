@@ -15,19 +15,22 @@ Ext.application({
 	models : [
 		"CategoryObejct",
 		"NewsObejct",
+		"SnBObejct",
 	],
 
 	stores : [
 		"NewsList",
 		"ChildCategory",
+		"SnBList",
 	],
 
 	views : [
 		"Widget.PrevBtn", "Widget.NextBtn", "Widget.ShareBtn",
 
 		"HomeView.HomeView",
-		"NewsView.NewsList", "NewsView.NewsDetail",
 		"CategoryView.CategoryList",
+		"NewsView.NewsList", "NewsView.NewsDetail",	
+		"SnBView.SnBList", "SnBView.SnBDetail",
 
 		"MainContainer",
 	],
@@ -36,9 +39,10 @@ Ext.application({
 		"Widget.PrevBtn", "Widget.NextBtn", "Widget.ShareBtn",
 
 		"HomeView.HomeView",
-		"NewsView.NewsList",
 		"CategoryView.CategoryList",
-
+		"NewsView.NewsList",
+		"SnBView.SnBList",
+		
 		"MainController",
 	],
 
