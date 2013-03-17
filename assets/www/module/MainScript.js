@@ -8,17 +8,6 @@ DB.ScreenWidth = document.body.scrollWidth;
 DB.ScreenHeight = document.body.scrollHeight;
 
 // 本地数据读取相关
-DB.DefaultBase = [];
-DB.DefaultBaseLoaded = false;
-function GetDefaultBase() {
-	Ext.Ajax.request({
-		url : "data/DefaultBase.json",
-		success : function (response) {
-			DB.DefaultBase = eval("(" + response.responseText + ")");
-			DB.DefaultBaseLoaded = true;
-		},
-	});
-};
 DB.DefaultApp = [];
 DB.DefaultAppLoaded = false;
 function GetDefaultApp() {

@@ -31,21 +31,6 @@ Ext.define("Project.controller.HomeView.HomeView", {
 								},
 							},
 						}));
-				} else if (data[k] && data[k]["AppIconUrl"]) {
-					HContainer.add(Ext.create("Ext.Container", {
-							width : DB.ScreenWidth * 0.275,
-							height : DB.ScreenWidth * 0.275,
-							html : "<img class = HomeViewIcon src = " + data[k]["AppIconUrl"] + " />",
-							listeners : {
-								tap : {
-									fn : function () {
-										SwitchToNext("NewsList");
-										Ext.getCmp("NewsListMain").setData(DB.JsonObject);
-									},
-									element : "element",
-								},
-							},
-						}));
 				} else {
 					HContainer.add(Ext.create("Ext.Container", {
 							width : DB.ScreenWidth * 0.275,
@@ -63,8 +48,8 @@ Ext.define("Project.controller.HomeView.HomeView", {
 	launch : function () {
 		var THIS = this;
 		var handle = setInterval(function () {
-				if (DB.DefaultBaseLoaded && DB.DefaultAppLoaded && DB.DefaultCategoryLoaded) {
-					THIS.SetGrid(DB.DefaultCategory.concat(DB.DefaultApp), Ext.getCmp("HomeViewMain"));
+				if (DB.DefaultAppLoaded && DB.DefaultCategoryLoaded) {
+					THIS.SetGrid(DB.DefaultCategory, Ext.getCmp("HomeViewMain"));
 					clearInterval(handle);
 				};
 			}, 50);

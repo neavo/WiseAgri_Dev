@@ -10,7 +10,6 @@ Ext.define("Project.controller.MainController", {
 		DB.MainContainer = this;
 		DB.MainContainer = this.getMainContainer();
 
-		GetDefaultBase();
 		GetDefaultApp();
 		GetDefaultCategory();
 
