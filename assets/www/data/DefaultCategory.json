@@ -12,12 +12,12 @@
 		"CategoryId" : "1102",
 		"CategoryName" : "交易平台",
 		"CategoryIconUrl" : "data/DefaultCategory/03.png",
-		"CategoryType" : "SnBCategory",
+		"CategoryType" : "ParentCategory",
 	}, {
 		"CategoryId" : "1106",
 		"CategoryName" : "专家指导",
 		"CategoryIconUrl" : "data/DefaultCategory/04.png",
-		"CategoryType" : "QnACategory",
+		"CategoryType" : "ParentCategory",
 	}, {
 		"CategoryId" : "1110",
 		"CategoryName" : "种植技术",
