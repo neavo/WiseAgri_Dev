@@ -4,28 +4,41 @@ Ext.define("Project.controller.HomeView.HomeView", {
 		refs : {},
 		control : {},
 	},
-	SetGrid : function (data, container) {
+	SetGrid : function (Data, Container) {
 		var i = 0;
 		var j = 0;
 		var k = 0;
 		var HContainer = "";
 		for (i = 0; i < 3; i++) {
-			container.add(Ext.create("Ext.Spacer"));
+			Container.add(Ext.create("Ext.Spacer"));
 			HContainer = Ext.create("Ext.Container", {
 					layout : "hbox",
 				});
 			for (j = 0; j < 3; j++) {
 				HContainer.add(Ext.create("Ext.Spacer"));
-				if (data[k] && data[k]["CategoryIconUrl"]) {
+				if (Data[k]) {
 					HContainer.add(Ext.create("Ext.Container", {
-							width : DB.ScreenWidth * 0.275,
-							height : DB.ScreenWidth * 0.275,
-							html : "<img class = HomeViewIcon src = " + data[k]["CategoryIconUrl"] + " />",
+							Data : Data[k],
+							width : DB.ScreenWidth * 0.3,
+							height : DB.ScreenWidth * 0.3,
+							html : "<img class = HomeViewIcon src = " + Data[k]["CategoryIconUrl"] + " />",
 							listeners : {
 								tap : {
 									fn : function () {
-										SwitchToNext("NewsList");
-										StoreLoad(Ext.getCmp("NewsListMain").getStore(), 1);
+										var Data = this.config.Data;
+										if (Data.CategoryType == "NewsCategory") {
+											SwitchToNext("NewsList");
+											Ext.getCmp("NewsListTop").setTitle(Data.CategoryName);
+											StoreLoad(Ext.getCmp("NewsListMain").getStore(), 1, {
+												"CategoryId" : Data.CategoryId,
+											});
+										} else if (Data.CategoryType == "ParentCategory") {
+											SwitchToNext("CategoryList");
+											Ext.getCmp("CategoryListTop").setTitle(Data.CategoryName);
+											StoreLoad(Ext.getCmp("CategoryListMain").getStore(), 1, {
+												"ParentId" : Data.CategoryId,
+											});
+										};
 									},
 									element : "element",
 								},
@@ -33,17 +46,17 @@ Ext.define("Project.controller.HomeView.HomeView", {
 						}));
 				} else {
 					HContainer.add(Ext.create("Ext.Container", {
-							width : DB.ScreenWidth * 0.275,
-							height : DB.ScreenWidth * 0.275,
+							width : DB.ScreenWidth * 0.3,
+							height : DB.ScreenWidth * 0.3,
 							html : "<img class = HomeViewIcon src = resources/image/NoIcon.png />",
 						}));
 				};
 				k = k + 1;
 			};
 			HContainer.add(Ext.create("Ext.Spacer"));
-			container.add(HContainer);
+			Container.add(HContainer);
 		};
-		container.add(Ext.create("Ext.Spacer"));
+		Container.add(Ext.create("Ext.Spacer"));
 	},
 	launch : function () {
 		var THIS = this;

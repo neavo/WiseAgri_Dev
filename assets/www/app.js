@@ -13,11 +13,13 @@ Ext.application({
 	],
 
 	models : [
+		"CategoryObejct",
 		"NewsObejct",
 	],
 
 	stores : [
 		"NewsList",
+		"ChildCategory",
 	],
 
 	views : [
@@ -25,6 +27,7 @@ Ext.application({
 
 		"HomeView.HomeView",
 		"NewsView.NewsList", "NewsView.NewsDetail",
+		"CategoryView.CategoryList",
 
 		"MainContainer",
 	],
@@ -34,6 +37,7 @@ Ext.application({
 
 		"HomeView.HomeView",
 		"NewsView.NewsList",
+		"CategoryView.CategoryList",
 
 		"MainController",
 	],

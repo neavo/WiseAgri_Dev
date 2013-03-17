@@ -70,11 +70,9 @@ function DoAlert(msg) {
 
 // Store相关
 DB.ActivatedStore = "";
-function StoreLoad(Store, Page) {
+function StoreLoad(Store, Page, Param) {
 	DB.ActivatedStore = Store;
-	Store.getProxy().setExtraParams({
-		"CategoryId" : "923",
-	});
+	Store.getProxy().setExtraParams(Param);
 	Store.loadPage(Page);
 };
 

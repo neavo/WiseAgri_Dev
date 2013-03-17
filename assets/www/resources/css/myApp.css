@@ -17,28 +17,28 @@
 }
 
 /*
-	注册页面列表样式
+	子频道列表页面样式
 */
-.RegisterListIcon {
-	width : 2.5em;
-	height : 2.5em;
+.CategoryListIcon {
 	float : left;
+	width : 3.5em;
+	height : 3.5em;
 	margin-bottom : 0.5em;
 }
-.RegisterListDisclosure {
-	float : right;
-	max-width : 1.5em;
-	max-height : 1.5em;
-	margin-right : 0.5em;
-	margin-top : 0.5em;
-}
-.RegisterListName {
+.CategoryListName {
 	font-size : 1.2em;
-	padding-top : 0.45em;
+	padding-top : 0.9em;
 	padding-left : 1em;
 	overflow : hidden;
-	font-weight : blod;
 }
+.CategoryListDisclosure {
+	float : right;
+	width : 1.5em;
+	height : 1.5em;
+	margin-right : 0.5em;
+	margin-top : 1em;
+}
+
 
 /*
 	新闻列表页面样式

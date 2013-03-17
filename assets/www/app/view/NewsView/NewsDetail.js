@@ -22,8 +22,10 @@ Ext.define("Project.view.NewsView.NewsDetail", {
 				items : [{
 						xtype : "spacer",
 					}, {
-						xtype : "container",
-						html : "浏览：18 次",
+						xtype : "button",
+						style : "color : white;",
+						ui : "plain",
+						text : "浏览：888 次",
 					}, {
 						xtype : "spacer",
 					}, {
