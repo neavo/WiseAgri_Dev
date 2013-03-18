@@ -18,6 +18,8 @@ Ext.define("Project.view.MainContainer", {
 				xtype : "SnBList",
 			}, {
 				xtype : "SnBDetail",
+			}, {
+				xtype : "ExpertList",
 			},
 		],
 	},

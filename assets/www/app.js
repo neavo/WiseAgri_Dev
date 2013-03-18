@@ -16,12 +16,14 @@ Ext.application({
 		"CategoryObejct",
 		"NewsObejct",
 		"SnBObejct",
+		"ExpertObejct",
 	],
 
 	stores : [
-		"NewsList",
 		"ChildCategory",
+		"NewsList",
 		"SnBList",
+		"ExpertList",
 	],
 
 	views : [
@@ -31,6 +33,7 @@ Ext.application({
 		"CategoryView.CategoryList",
 		"NewsView.NewsList", "NewsView.NewsDetail",	
 		"SnBView.SnBList", "SnBView.SnBDetail",
+		"ExpertView.ExpertList", "ExpertView.ExpertDetail",
 
 		"MainContainer",
 	],
@@ -42,6 +45,7 @@ Ext.application({
 		"CategoryView.CategoryList",
 		"NewsView.NewsList",
 		"SnBView.SnBList",
+		"ExpertView.ExpertList",
 		
 		"MainController",
 	],

@@ -1,26 +1,26 @@
-Ext.define("Project.view.NewsView.NewsList", {
+Ext.define("Project.view.ExpertView.ExpertList", {
 	extend : "Ext.Container",
-	xtype : "NewsList",
+	xtype : "ExpertList",
 	config : {
 		layout : "vbox",
 		defaults : {
 			flex : 1,
 		},
 		items : [{
-				id : "NewsListTop",
+				id : "ExpertListTop",
 				xtype : "toolbar",
 				docked : "top",
 				baseCls : "ToolBar",
 			}, {
-				id : "NewsListMain",
+				id : "ExpertListMain",
 				xtype : "list",
-				store : "NewsList",
+				store : "ExpertList",
 				emptyText : "没有更多信息 ...",
 				loadingText : "正在获取信息...",
-				itemTpl : "<img class = NewsListIcon onerror = \" this.src = 'resources/image/DefaultIcon.png' \" src = {NewsIconUrl} />"
-				 + "<p class = NewsListTitle>{NewsTitle}</p>"
-				 + "<p class = NewsListDateTimePubliser>时间：{NewsDateTime}</p>"
-				 + "<p class = NewsListDateTimePubliser>来源：{NewsPublisher}</p>",
+				itemTpl : "<img class = ExpertListIcon onerror = \" this.src = 'resources/image/DefaultIcon.png' \" src = {ExpertIconUrl} />"
+				 + "<div class = ExpertListName><b>{ExpertName}</b></div>"
+				 + "<div class = ExpertListTitlePosition>职称：{ExpertTitle}</div>"
+				 + "<div class = ExpertListTitlePosition>职位：{ExpertPosition}</div>",
 			}, {
 				xtype : "toolbar",
 				docked : "bottom",

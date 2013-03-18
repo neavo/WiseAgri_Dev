@@ -30,6 +30,13 @@ Ext.define("Project.controller.CategoryView.CategoryList", {
 			StoreLoad(Ext.getCmp("SnBListMain").getStore(), 1, {
 				"CategoryId" : Data.CategoryId,
 			});
+		} else if (Data.CategoryType == "ExpertCategory") {
+			SwitchToNext("ExpertList");
+			Ext.getCmp("ExpertListTop").setTitle(Data.CategoryName);
+			StoreLoad(Ext.getCmp("ExpertListMain").getStore(), 1, {
+				//"CategoryId" : Data.CategoryId,
+				"CategoryId" : "218",
+			});
 		};
 	},
 });
