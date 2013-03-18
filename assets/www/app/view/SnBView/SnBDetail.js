@@ -22,10 +22,10 @@ Ext.define("Project.view.SnBView.SnBDetail", {
 				items : [{
 						xtype : "spacer",
 					}, {
+						id : "SnBSkimNumBtn",
 						xtype : "button",
 						style : "color : white;",
 						ui : "plain",
-						text : "浏览：888 次",
 					}, {
 						xtype : "spacer",
 					}, {

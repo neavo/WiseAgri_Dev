@@ -28,7 +28,8 @@ Ext.define("Project.controller.CategoryView.CategoryList", {
 			SwitchToNext("SnBList");
 			Ext.getCmp("SnBListTop").setTitle(Data.CategoryName);
 			StoreLoad(Ext.getCmp("SnBListMain").getStore(), 1, {
-				"CategoryId" : Data.CategoryId,
+				//"CategoryId" : Data.CategoryId,
+				"CategoryId" : "508",
 			});
 		};
 	},

@@ -20,6 +20,7 @@ Ext.define("Project.controller.NewsView.NewsList", {
 			success : function (response) {
 				var ResponseObject = eval("(" + response.responseText + ")");
 				var Data = ResponseObject["0"];
+				Ext.getCmp("NewsSkimNumBtn").setText("浏览：" + Data.NewsSkimNum + " 次");
 				var NewsDetailMain = Ext.getCmp("NewsDetailMain");
 				NewsDetailMain.setHtml("<div style = \"background : #FFFFFF; margin-top : 0.25em; -webkit-border-radius : 0.25em; border : 1px solid #808080;\">");
 				if (Data.NewsTitle != "") {
