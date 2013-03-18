@@ -18,7 +18,7 @@ Ext.define("Project.view.SnBView.SnBList", {
 				emptyText : "没有更多信息 ...",
 				loadingText : "正在获取信息...",
 				itemTpl : "<img class = SnBListIcon onerror = \" this.src = 'resources/image/DefaultIcon.png' \" src = {SnBIconUrl} />"
-				 + "<div class = SnBListTitle><b>[{SnBType}] {SnBTitle}</b></div>"
+				 + "<div class = SnBListTitle><b>{SnBTitle}</b></div>"
 				 + "<div class = SnBListDataTimePubliser>时间：{SnBDateTime}</div>"
 				 + "<div class = SnBListDataTimePubliser>联系人：{SnBPublisher}</div>",
 			}, {

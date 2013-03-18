@@ -34,8 +34,7 @@ Ext.define("Project.controller.CategoryView.CategoryList", {
 			SwitchToNext("ExpertList");
 			Ext.getCmp("ExpertListTop").setTitle(Data.CategoryName);
 			StoreLoad(Ext.getCmp("ExpertListMain").getStore(), 1, {
-				//"CategoryId" : Data.CategoryId,
-				"CategoryId" : "218",
+				"CategoryId" : Data.CategoryId,
 			});
 		};
 	},
