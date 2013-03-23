@@ -16,6 +16,7 @@ Ext.application({
 		"CategoryObejct",
 		"NewsObejct",
 		"SnBObejct",
+		"QnAObejct",
 		"ExpertObejct",
 	],
 
@@ -23,6 +24,7 @@ Ext.application({
 		"ChildCategory",
 		"NewsList",
 		"SnBList",
+		"QnAList",
 		"ExpertList",
 	],
 
@@ -33,6 +35,7 @@ Ext.application({
 		"CategoryView.CategoryList",
 		"NewsView.NewsList", "NewsView.NewsDetail",	
 		"SnBView.SnBList", "SnBView.SnBDetail",
+		"QnAView.QnAList", "QnAView.QnADetail",
 		"ExpertView.ExpertList", "ExpertView.ExpertDetail",
 
 		"MainContainer",
@@ -45,6 +48,7 @@ Ext.application({
 		"CategoryView.CategoryList",
 		"NewsView.NewsList",
 		"SnBView.SnBList",
+		"QnAView.QnAList",
 		"ExpertView.ExpertList",
 		
 		"MainController",

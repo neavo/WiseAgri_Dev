@@ -19,6 +19,10 @@ Ext.define("Project.view.MainContainer", {
 			}, {
 				xtype : "SnBDetail",
 			}, {
+				xtype : "QnAList",
+			},  {
+				xtype : "QnADetail",
+			}, {
 				xtype : "ExpertList",
 			},
 		],
