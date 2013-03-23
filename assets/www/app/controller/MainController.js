@@ -10,9 +10,6 @@ Ext.define("Project.controller.MainController", {
 		DB.MainContainer = this;
 		DB.MainContainer = this.getMainContainer();
 
-		GetDefaultApp();
-		GetDefaultCategory();
-
 		DB.History.push("HomeView");
 	},
 });

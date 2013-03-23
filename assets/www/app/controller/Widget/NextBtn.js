@@ -6,11 +6,11 @@ Ext.define("Project.controller.Widget.NextBtn", {
 		},
 		control : {
 			NextBtn : {
-				tap : "onNextBtnTap",
+				tap : "OnNextBtnTap",
 			},
 		},
 	},
-	onNextBtnTap : function () {
+	OnNextBtnTap : function () {
 		DB.ActivatedStore.nextPage({
 			callback : function (records, operation, success) {
 				if (records.length == 0 || !success) {

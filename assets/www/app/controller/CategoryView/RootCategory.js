@@ -1,21 +1,21 @@
-Ext.define("Project.controller.CategoryView.CategoryList", {
+Ext.define("Project.controller.CategoryView.RootCategory", {
 	extend : "Ext.app.Controller",
 	config : {
 		refs : {
-			CategoryListMain : "#CategoryListMain",
+			RootCategoryMain : "#RootCategoryMain",
 		},
 		control : {
-			CategoryListMain : {
-				itemtap : "OnCategoryListMainItemtap"
+			RootCategoryMain : {
+				itemtap : "OnRootCategoryMainItemtap"
 			},
 		},
 	},
-	OnCategoryListMainItemtap : function (list, index, target, record, e, eOpts) {
+	OnRootCategoryMainItemtap : function (list, index, target, record, e, eOpts) {
 		var Data = record.getData();
 		if (Data.CategoryType == "ParentCategory") {
-			SwitchToNext("CategoryList");
-			Ext.getCmp("CategoryListTop").setTitle(Data.CategoryName);
-			StoreLoad(Ext.getCmp("CategoryListMain").getStore(), 1, {
+			SwitchToNext("ChildCategory");
+			Ext.getCmp("ChildCategoryTop").setTitle(Data.CategoryName);
+			StoreLoad(Ext.getCmp("ChildCategoryMain").getStore(), 1, {
 				"ParentId" : Data.CategoryId,
 			});
 		} else if (Data.CategoryType == "NewsCategory") {

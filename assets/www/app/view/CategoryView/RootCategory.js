@@ -1,25 +1,25 @@
-Ext.define("Project.view.CategoryView.CategoryList", {
+Ext.define("Project.view.CategoryView.RootCategory", {
 	extend : "Ext.Container",
-	xtype : "CategoryList",
+	xtype : "RootCategory",
 	config : {
 		layout : "vbox",
 		defaults : {
 			flex : 1,
 		},
 		items : [{
-				id : "CategoryListTop",
+				id : "RootCategoryTop",
 				xtype : "toolbar",
 				docked : "top",
 				baseCls : "ToolBar",
 			}, {
-				id : "CategoryListMain",
+				id : "RootCategoryMain",
 				xtype : "list",
-				store : "ChildCategory",
+				store : "RootCategory",
 				emptyText : "没有更多信息 ...",
 				loadingText : "正在获取信息...",
-				itemTpl : "<img class = CategoryListIcon src = {CategoryIconUrl} />"
-				 + "<img class = CategoryListDisclosure src = resources/image/DisclosureIcon.png />"
-				 + "<div class = CategoryListName><b>{CategoryName}</b></div>",
+				itemTpl : "<img class = RootCategoryIcon src = {CategoryIconUrl} />"
+				 + "<img class = RootCategoryDisclosure src = resources/image/DisclosureIcon.png />"
+				 + "<div class = RootCategoryName><b>{CategoryName}</b></div>",
 			}, {
 				xtype : "toolbar",
 				docked : "bottom",

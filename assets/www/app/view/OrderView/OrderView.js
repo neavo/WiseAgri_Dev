@@ -1,6 +1,6 @@
-Ext.define("Project.view.HomeView.HomeView", {
+Ext.define("Project.view.OrderView.OrderView", {
 	extend : "Ext.Container",
-	xtype : "HomeView",
+	xtype : "OrderView",
 	config : {
 		layout : "vbox",
 		style : "background : white;",
@@ -8,12 +8,12 @@ Ext.define("Project.view.HomeView.HomeView", {
 			flex : 1,
 		},
 		items : [{
-				id : "HomeViewTop",
 				xtype : "toolbar",
 				docked : "top",
 				baseCls : "ToolBar",
+				title : "频道订阅",
 			}, {
-				id : "HomeViewMain",
+				id : "OrderViewMain",
 				xtype : "carousel",
 				layout : "vbox",
 			}, {
@@ -23,11 +23,11 @@ Ext.define("Project.view.HomeView.HomeView", {
 				items : [{
 						xtype : "spacer",
 					}, {
-						xtype : "FeedBackBtn",
+						xtype : "OrderOKBtn",
 					}, {
 						xtype : "spacer",
 					}, {
-						xtype : "OrderBtn",
+						xtype : "OrderCancelBtn",
 					}, {
 						xtype : "spacer",
 					},

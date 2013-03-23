@@ -10,6 +10,7 @@ Ext.application({
 		"Ext.form.FieldSet",
 		"Ext.field.Checkbox",
 		"Ext.field.Password",
+		"Ext.carousel.Carousel",
 	],
 
 	models : [
@@ -21,6 +22,7 @@ Ext.application({
 	],
 
 	stores : [
+		"RootCategory",
 		"ChildCategory",
 		"NewsList",
 		"SnBList",
@@ -30,10 +32,13 @@ Ext.application({
 
 	views : [
 		"Widget.PrevBtn", "Widget.NextBtn", "Widget.ShareBtn",
+		"Widget.FeedBackBtn", "Widget.OrderBtn", "Widget.OrderOKBtn",
+		"Widget.OrderCancelBtn",
 
 		"HomeView.HomeView",
-		"CategoryView.CategoryList",
-		"NewsView.NewsList", "NewsView.NewsDetail",	
+		"OrderView.OrderView",
+		"CategoryView.RootCategory", "CategoryView.ChildCategory",
+		"NewsView.NewsList", "NewsView.NewsDetail",
 		"SnBView.SnBList", "SnBView.SnBDetail",
 		"QnAView.QnAList", "QnAView.QnADetail",
 		"ExpertView.ExpertList", "ExpertView.ExpertDetail",
@@ -43,14 +48,16 @@ Ext.application({
 
 	controllers : [
 		"Widget.PrevBtn", "Widget.NextBtn", "Widget.ShareBtn",
+		"Widget.FeedBackBtn", "Widget.OrderBtn", "Widget.OrderOKBtn",
+		"Widget.OrderCancelBtn",
 
 		"HomeView.HomeView",
-		"CategoryView.CategoryList",
+		"CategoryView.RootCategory", "CategoryView.ChildCategory",
 		"NewsView.NewsList",
 		"SnBView.SnBList",
 		"QnAView.QnAList",
 		"ExpertView.ExpertList",
-		
+
 		"MainController",
 	],
 

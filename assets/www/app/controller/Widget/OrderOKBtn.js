@@ -1,8 +1,14 @@
-Ext.define("Project.controller.HomeView.HomeView", {
+Ext.define("Project.controller.Widget.OrderOKBtn", {
 	extend : "Ext.app.Controller",
 	config : {
-		refs : {},
-		control : {},
+		refs : {
+			OrderOKBtn : "OrderOKBtn",
+		},
+		control : {
+			OrderOKBtn : {
+				tap : "OnOrderOKBtnTap",
+			},
+		},
 	},
 	SetGrid : function (Data, Carousel) {
 		var i = 0;
@@ -108,15 +114,18 @@ Ext.define("Project.controller.HomeView.HomeView", {
 			this.SetGrid(Data.slice(k), Carousel);
 		};
 	},
-	launch : function () {
+	OnOrderOKBtnTap : function () {
 		var THIS = this;
+		localStorage.setItem("OrderApp", JSON.stringify(DB.OrderApp));			
+		SwitchToPrev();
 		GetOrderApp();
 		GetDefaultApp();
 		GetDefaultCategory();
 		var handle = setInterval(function () {
 				if (DB.OrderAppLoaded && DB.DefaultAppLoaded && DB.DefaultCategoryLoaded) {
-					Ext.getCmp("HomeViewTop").setTitle(DB.DefaultApp["0"]["AppLocation"] + " • " + DB.DefaultApp["0"]["AppName"]);
+					Ext.getCmp("HomeViewMain").removeAll(true);	
 					THIS.SetGrid(DB.DefaultCategory.concat(DB.OrderApp), Ext.getCmp("HomeViewMain"));
+					Ext.getCmp("HomeViewMain").setActiveItem(0);
 					clearInterval(handle);
 				};
 			}, 50);

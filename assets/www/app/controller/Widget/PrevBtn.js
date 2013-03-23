@@ -6,11 +6,11 @@ Ext.define("Project.controller.Widget.PrevBtn", {
 		},
 		control : {
 			PrevBtn : {
-				tap : "onPrevBtnTap",
+				tap : "OnPrevBtnTap",
 			},
 		},
 	},
-	onPrevBtnTap : function () {
+	OnPrevBtnTap : function () {
 		if (DB.ActivatedStore.currentPage == 1) {
 			DoAlert("当前已是第一页！");
 		} else {

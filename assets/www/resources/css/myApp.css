@@ -9,7 +9,7 @@
 }
 
 /*
-	主页面图标样式
+	主页面样式
 */
 .HomeViewIcon {
 	width : 100%;
@@ -17,21 +17,52 @@
 }
 
 /*
-	子频道列表页面样式
+	频道订阅页面样式
 */
-.CategoryListIcon {
+.OrderViewIcon {
+	width : 100%;
+	height : 100%;
+}
+
+/*
+	一级频道列表页面样式
+*/
+.RootCategoryIcon {
 	float : left;
 	width : 3.5em;
 	height : 3.5em;
 	margin-bottom : 0.5em;
 }
-.CategoryListName {
+.RootCategoryName {
 	font-size : 1.2em;
 	padding-top : 0.9em;
 	padding-left : 1em;
 	overflow : hidden;
 }
-.CategoryListDisclosure {
+.RootCategoryDisclosure {
+	float : right;
+	width : 1.5em;
+	height : 1.5em;
+	margin-right : 0.5em;
+	margin-top : 1em;
+}
+
+/*
+	二级频道列表页面样式
+*/
+.ChildCategoryIcon {
+	float : left;
+	width : 3.5em;
+	height : 3.5em;
+	margin-bottom : 0.5em;
+}
+.ChildCategoryName {
+	font-size : 1.2em;
+	padding-top : 0.9em;
+	padding-left : 1em;
+	overflow : hidden;
+}
+.ChildCategoryDisclosure {
 	float : right;
 	width : 1.5em;
 	height : 1.5em;
@@ -239,6 +270,9 @@
 	overflow : hidden;
 }
 
+/*
+	专家详细页面样式
+*/
 .ExpertDetailName {
 	color : #000000;
    	text-align : center;

@@ -1,6 +1,6 @@
 // 服务器数据相关
-//var ServerUrl = "http://221.235.190.13:8080/WiseAgriAjax/";
-var ServerUrl = "http://192.168.1.101:8081/WiseAgriAjax/";
+var ServerUrl = "http://221.235.190.13:8080/WiseAgriAjax_Dev/";
+//var ServerUrl = "http://192.168.1.101:8081/WiseAgriAjax_Dev/";
 
 // 本地DateBase相关
 var DB = [];
@@ -8,9 +8,20 @@ DB.ScreenWidth = document.body.scrollWidth;
 DB.ScreenHeight = document.body.scrollHeight;
 
 // 本地数据读取相关
+DB.OrderApp = [];
+DB.OrderAppLoaded = false;
+function GetOrderApp() {
+	DB.OrderAppLoaded = false;
+	var JsonString = localStorage.getItem("OrderApp");
+	if (JsonString && JsonString != "") {
+		DB.OrderApp = JSON.parse(JsonString);
+	};
+	DB.OrderAppLoaded = true;
+};
 DB.DefaultApp = [];
 DB.DefaultAppLoaded = false;
 function GetDefaultApp() {
+	DB.DefaultAppLoaded = false;
 	Ext.Ajax.request({
 		url : "data/DefaultApp.json",
 		success : function (response) {
@@ -22,6 +33,7 @@ function GetDefaultApp() {
 DB.DefaultCategory = [];
 DB.DefaultCategoryLoaded = false;
 function GetDefaultCategory() {
+	DB.DefaultCategoryLoaded = false;
 	Ext.Ajax.request({
 		url : "data/DefaultCategory.json",
 		success : function (response) {
@@ -70,9 +82,9 @@ function DoAlert(msg) {
 
 // Store相关
 DB.ActivatedStore = "";
-function StoreLoad(Store, Page, Param) {
+function StoreLoad(Store, Page, Params) {
 	DB.ActivatedStore = Store;
-	Store.getProxy().setExtraParams(Param);
+	Store.getProxy().setExtraParams(Params);
 	Store.loadPage(Page);
 };
 
