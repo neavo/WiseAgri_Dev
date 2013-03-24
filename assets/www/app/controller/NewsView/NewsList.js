@@ -45,6 +45,11 @@ Ext.define("Project.controller.NewsView.NewsList", {
 								 + "<div style = \" height : 0.25em \" ></div>");
 						};
 				};
+				if (Data.NewsVideoUrl != "") {
+					NewsDetailMain.setHtml(NewsDetailMain.getHtml()
+						 + "<img class = NewsDetailImage onclick = \" window.plugins.videoPlayer.play('" + Data.NewsVideoUrl + "'); \" src = resources/image/VideoPlayer.png />"
+						 + "<div style = \" height : 0.25em \" ></div>");
+				};
 				NewsDetailMain.setHtml(NewsDetailMain.getHtml()
 					 + "</div>"
 					 + "<div style = \" height : 0.25em \" ></div>");

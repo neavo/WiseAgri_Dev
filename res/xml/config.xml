@@ -58,6 +58,7 @@
 	
 	<!-- Custom Plugins -->
     <plugin name="Share" value="com.schaul.plugins.share.Share"/>
+    <plugin name="VideoPlayer" value="com.phonegap.plugins.video.VideoPlayer"/>
 </plugins>
 </cordova>
 
