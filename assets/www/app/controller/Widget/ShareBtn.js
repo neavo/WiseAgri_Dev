@@ -14,7 +14,7 @@ Ext.define("Project.controller.Widget.ShareBtn", {
 		if (window.plugins.share) {
 			window.plugins.share.show({
 				subject : "",
-				text : "来自“智慧农业”手机客户端的分享！",
+				text : "来自 “智慧农业 • 湖北” 手机客户端（http://www.118328.com/szwap）的分享！",
 			},
 				function () {
 				DoAlert("分享成功！");
