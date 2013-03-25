@@ -78,11 +78,11 @@ Ext.define("Project.controller.HomeView.HomeView", {
 								tap : {
 									fn : function () {
 										var Data = this.config.Data;
-											SwitchToNext("RootCategory");
-											Ext.getCmp("RootCategoryTop").setTitle(Data.AppLocation + " • " + Data.AppName);
-											StoreLoad(Ext.getCmp("RootCategoryMain").getStore(), 1, {
-												"AppId" : Data.AppId,
-											});
+										SwitchToNext("RootCategory");
+										Ext.getCmp("RootCategoryTop").setTitle(Data.AppLocation + " • " + Data.AppName);
+										StoreLoad(Ext.getCmp("RootCategoryMain").getStore(), 1, {
+											"AppId" : Data.AppId,
+										});
 									},
 									element : "element",
 								},
@@ -115,8 +115,20 @@ Ext.define("Project.controller.HomeView.HomeView", {
 		GetDefaultCategory();
 		var handle = setInterval(function () {
 				if (DB.OrderAppLoaded && DB.DefaultAppLoaded && DB.DefaultCategoryLoaded) {
+					window.plugins.IMSI.GetIMSI(function (IMSI) {
+						Ext.Ajax.request({
+							url : ServerUrl + "PostAppUser.jsp",
+							params : {
+								"IMSI" : IMSI,
+								"AppId" : DB.DefaultApp["0"]["AppId"],
+							},
+						});
+					}, function (Error) {
+						console.log(Error);
+					});
 					Ext.getCmp("HomeViewTop").setTitle(DB.DefaultApp["0"]["AppLocation"] + " • " + DB.DefaultApp["0"]["AppName"]);
 					THIS.SetGrid(DB.DefaultCategory.concat(DB.OrderApp), Ext.getCmp("HomeViewMain"));
+
 					clearInterval(handle);
 				};
 			}, 50);

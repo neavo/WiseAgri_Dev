@@ -21,44 +21,43 @@ Ext.define("Project.controller.ExpertView.ExpertList", {
 				var ResponseObject = eval("(" + response.responseText + ")");
 				var Data = ResponseObject["0"];
 				Ext.getCmp("ExpertSkimNumBtn").setText("浏览：" + Data.ExpertSkimNum + " 次");
-				var ExpertDetailMain = Ext.getCmp("ExpertDetailMain");
-				ExpertDetailMain.setHtml("<div style = \"background : #FFFFFF; margin-top : 0.25em; -webkit-border-radius : 0.25em; border : 1px solid #808080;\">");
+				var Content = "<div style = \"background : #FFFFFF; margin-top : 0.25em; -webkit-border-radius : 0.25em; border : 1px solid #808080;\">";
 				if (Data.ExpertName != "") {
-					ExpertDetailMain.setHtml(ExpertDetailMain.getHtml()
-						 + "<div class = ExpertDetailName>" + Data.ExpertName + "</div>");
+					Content = Content
+						 + "<div class = ExpertDetailName>" + Data.ExpertName + "</div>";
 				};
 				if (Data.ExpertTitle != "") {
-					ExpertDetailMain.setHtml(ExpertDetailMain.getHtml()
+					Content = Content
 						 + "<div class = ExpertDetailContent>" + "职称：" + Data.ExpertTitle + "</div>"
-						 + "<div style = \" height : 0.25em \" ></div>");
+						 + "<div style = \" height : 0.25em \" ></div>";
 				};
 				if (Data.ExpertPosition != "") {
-					ExpertDetailMain.setHtml(ExpertDetailMain.getHtml()
+					Content = Content
 						 + "<div class = ExpertDetailContent>" + "职位：" + Data.ExpertPosition + "</div>"
-						 + "<div style = \" height : 0.25em \" ></div>");
+						 + "<div style = \" height : 0.25em \" ></div>";
 				};
 				if (Data.ExpertPhone != "") {
-					ExpertDetailMain.setHtml(ExpertDetailMain.getHtml()
+					Content = Content
 						 + "<div class = ExpertDetailContent>" + "电话号码：" + "<a href = \"tel:" + Data.ExpertPhone + "\">" + Data.ExpertPhone + "</a>" + "</div>"
-						 + "<div style = \" height : 0.25em \" ></div>");
+						 + "<div style = \" height : 0.25em \" ></div>";
 				};
 				if (Data.ExpertContent != "") {
-					ExpertDetailMain.setHtml(ExpertDetailMain.getHtml()
+					Content = Content
 						 + "<div class = ExpertDetailContent>" + "详细内容：" + Data.ExpertContent + "</div>"
-						 + "<div style = \" height : 0.25em \" ></div>");
+						 + "<div style = \" height : 0.25em \" ></div>";
 				};
 				if (Data.ExpertImageUrl != "") {
 					var ExpertImageUrl = Data.ExpertImageUrl.split(";")
 						for (i = 0; i < ExpertImageUrl.length; i++) {
-							ExpertDetailMain.setHtml(ExpertDetailMain.getHtml()
+							Content = Content
 								 + "<img class = ExpertDetailImage src = " + ExpertImageUrl[i] + " />"
-								 + "<div style = \" height : 0.25em \" ></div>");
+								 + "<div style = \" height : 0.25em \" ></div>";
 						};
 				};
-				ExpertDetailMain.setHtml(ExpertDetailMain.getHtml()
+				Ext.getCmp("ExpertDetailMain").setHtml(Content
 					 + "</div>"
 					 + "<div style = \" height : 0.25em \" ></div>");
-			}
+			},
 		});
 	},
 });

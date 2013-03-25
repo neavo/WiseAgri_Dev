@@ -1,6 +1,6 @@
 // 服务器数据相关
-var ServerUrl = "http://221.235.190.13:8080/WiseAgriAjax_Dev/";
-//var ServerUrl = "http://192.168.1.101:8081/WiseAgriAjax_Dev/";
+//var ServerUrl = "http://221.235.190.13:8080/WiseAgriAjax_Dev/";
+var ServerUrl = "http://192.168.1.101:8081/WiseAgriAjax_Dev/";
 
 // 本地DateBase相关
 var DB = [];

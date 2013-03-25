@@ -13,10 +13,12 @@ if (!window.plugins.IMSI) {
 	window.plugins.IMSI = {};
 };
 
-window.plugins.IMSI.GetIMSI = function () {
-	cordova.exec(function (Param) {
-		alert(Param);
-	}, function (Error) {
-		console.log(Error);
-	}, "IMSI", "GetIMSI", []);
+window.plugins.IMSI.GetIMSI = function (Success, Fail) {
+	if (cordova.exec) {
+		cordova.exec(function (IMSI) {
+			Success(IMSI);
+		}, function (Error) {
+			Fail(Error);
+		}, "IMSI", "GetIMSI", []);
+	};
 };
