@@ -114,6 +114,8 @@ Ext.define("Project.controller.Widget.OrderBtn", {
 	},
 	OnOrderBtnTap : function () {
 		var THIS = this;
+		SwitchToNext("OrderView");
+		Ext.getCmp("OrderViewMain").removeAll(true);
 		Ext.Ajax.request({
 			url : ServerUrl + "GetAppList.jsp",
 			params : {
@@ -121,8 +123,6 @@ Ext.define("Project.controller.Widget.OrderBtn", {
 			},
 			success : function (response) {
 				var ResponseObject = eval("(" + response.responseText + ")");
-				SwitchToNext("OrderView");
-				Ext.getCmp("OrderViewMain").removeAll(true);
 				THIS.SetGrid(ResponseObject, Ext.getCmp("OrderViewMain"));
 				Ext.getCmp("OrderViewMain").setActiveItem(0);
 			},

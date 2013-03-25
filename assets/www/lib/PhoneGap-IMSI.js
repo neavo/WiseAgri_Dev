@@ -3,7 +3,7 @@
 
 // 获取本机IMSI
 // GetIMSI
-// window.plugins.IMSI.GetIMSI();
+// window.plugins.IMSI.GetIMSI(function() {IMSI}, function(Error) {});
 
 if (!window.plugins) {
 	window.plugins = {};
