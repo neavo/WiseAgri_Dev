@@ -9,6 +9,10 @@ Ext.define("Project.view.MainContainer", {
 		items : [{
 				xtype : "HomeView",
 			}, {
+				xtype : "FeedBackList",
+			}, {
+				xtype : "FeedBackDetail",
+			}, {
 				xtype : "OrderView",
 			}, {
 				xtype : "RootCategory",
@@ -23,9 +27,13 @@ Ext.define("Project.view.MainContainer", {
 			}, {
 				xtype : "SnBDetail",
 			}, {
+				xtype : "PostSnB",
+			}, {
 				xtype : "QnAList",
 			}, {
 				xtype : "QnADetail",
+			}, {
+				xtype : "PostQnA",
 			}, {
 				xtype : "ExpertList",
 			},

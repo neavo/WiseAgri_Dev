@@ -30,12 +30,28 @@ Ext.define("Project.controller.CategoryView.ChildCategory", {
 			StoreLoad(Ext.getCmp("SnBListMain").getStore(), 1, {
 				"CategoryId" : Data.CategoryId,
 			});
+		} else if (Data.CategoryType == "PostSnB") {
+			SwitchToNext("PostSnB");
+			var Items = Ext.getCmp("PostSnBMain").getItems();
+			for (var Key in Items.items) {
+				Items.getAt(Key).setValue("");
+			};
+			Ext.getCmp("PostSnBTop").setTitle(Data.CategoryName);
+			Ext.getCmp("SnBCategoryId").setValue(Data.CategoryId);
 		} else if (Data.CategoryType == "QnACategory") {
 			SwitchToNext("QnAList");
 			Ext.getCmp("QnAListTop").setTitle(Data.CategoryName);
 			StoreLoad(Ext.getCmp("QnAListMain").getStore(), 1, {
 				"CategoryId" : Data.CategoryId,
 			});
+		} else if (Data.CategoryType == "PostQnA") {
+			SwitchToNext("PostQnA");
+			var Items = Ext.getCmp("PostQnAMain").getItems();
+			for (var Key in Items.items) {
+				Items.getAt(Key).setValue("");
+			};
+			Ext.getCmp("PostQnATop").setTitle(Data.CategoryName);
+			Ext.getCmp("QnACategoryId").setValue(Data.CategoryId);
 		} else if (Data.CategoryType == "ExpertCategory") {
 			SwitchToNext("ExpertList");
 			Ext.getCmp("ExpertListTop").setTitle(Data.CategoryName);

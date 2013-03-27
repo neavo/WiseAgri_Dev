@@ -14,6 +14,56 @@
 .HomeViewIcon {
 	width : 100%;
 	height : 100%;
+	-webkit-border-radius : 0.25em;
+}
+
+/*
+	建议反馈列表样式
+*/
+.FeedBackListIcon {
+	float : left;
+	width : 3.5em;
+	height : 3.5em;
+	margin-bottom : 0.5em;
+	-webkit-border-radius : 0.25em;
+}
+.FeedBackListContent {
+	text-align : left;
+	font-size : 0.85em;
+	line-height : 1.1em;
+	height : 2.2em;
+	padding-left : 0.9em;
+	margin-bottom : 0.2em;
+	overflow : hidden;
+}
+.FeedBackListDataTimePubliser {
+	text-align : left;
+	font-size : 0.65em;
+	color :  #808080;
+	padding-left : 1.2em;
+	overflow : hidden;
+}
+
+/*
+	供求详细视图样式
+*/
+.FeedBackDetailContent {
+	width : 97.5%;
+	font-size : 0.9em;
+	letter-spacing: 0.1em;
+	line-height : 1.3em;
+	display : block;
+	margin : auto;
+	text-align : justify;
+	text-justify : inter-ideograph;
+}
+.FeedBackDetailImage {
+	margin-top : 1em;
+	max-width : 97.5%;
+	display : block;
+	margin : auto;
+	border : 1.5px solid #33B5E5;
+	-webkit-border-radius : 0.25em;
 }
 
 /*
@@ -22,6 +72,7 @@
 .OrderViewIcon {
 	width : 100%;
 	height : 100%;
+	-webkit-border-radius : 0.25em;
 }
 
 /*
@@ -32,6 +83,7 @@
 	width : 3.5em;
 	height : 3.5em;
 	margin-bottom : 0.5em;
+	-webkit-border-radius : 0.25em;
 }
 .RootCategoryName {
 	font-size : 1.2em;
@@ -55,6 +107,7 @@
 	width : 3.5em;
 	height : 3.5em;
 	margin-bottom : 0.5em;
+	-webkit-border-radius : 0.25em;
 }
 .ChildCategoryName {
 	font-size : 1.2em;
@@ -78,6 +131,7 @@
 	width : 3.5em;
 	height : 3.5em;
 	margin-bottom : 0.5em;
+	-webkit-border-radius : 0.25em;
 }
 .NewsListTitle {
 	text-align : left;
@@ -125,7 +179,6 @@
 	text-justify : inter-ideograph;
 }
 .NewsDetailImage {
-	margin-top : 1em;
 	max-width : 97.5%;
 	display : block;
 	margin : auto;
@@ -141,6 +194,7 @@
 	width : 3.5em;
 	height : 3.5em;
 	margin-bottom : 0.5em;
+	-webkit-border-radius : 0.25em;
 }
 .SnBListTitle {
 	text-align : left;
@@ -188,11 +242,18 @@
 	text-justify : inter-ideograph;
 }
 .SnBDetailImage {
-	margin-top : 1em;
 	max-width : 97.5%;
 	display : block;
 	margin : auto;
 	border : 1.5px solid #33B5E5;
+	-webkit-border-radius : 0.25em;
+}
+
+/*
+	发布供求页面样式
+*/
+.SnBPostFormPanel {
+	margin : 0.25em;
 	-webkit-border-radius : 0.25em;
 }
 
@@ -204,6 +265,7 @@
 	width : 3.5em;
 	height : 3.5em;
 	margin-bottom : 0.5em;
+	-webkit-border-radius : 0.25em;
 }
 .QnAListContent {
 	text-align : left;
@@ -236,11 +298,18 @@
 	text-justify : inter-ideograph;
 }
 .QnADetailImage {
-	margin-top : 1em;
 	max-width : 97.5%;
 	display : block;
 	margin : auto;
 	border : 1.5px solid #33B5E5;
+	-webkit-border-radius : 0.25em;
+}
+
+/*
+	发布供求页面样式
+*/
+.QnAPostFormPanel {
+	margin : 0.25em;
 	-webkit-border-radius : 0.25em;
 }
 
@@ -252,6 +321,7 @@
 	width : 3.5em;
 	height : 3.5em;
 	margin-bottom : 0.5em;
+	-webkit-border-radius : 0.25em;
 }
 .ExpertListName {
 	text-align : left;
@@ -292,7 +362,6 @@
 	text-justify : inter-ideograph;
 }
 .ExpertDetailImage {
-	margin-top : 1em;
 	max-width : 97.5%;
 	display : block;
 	margin : auto;

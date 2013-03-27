@@ -11,6 +11,9 @@ Ext.define("Project.controller.Widget.FeedBackBtn", {
 		},
 	},
 	OnFeedBackBtnTap : function () {
-		console.log("OnFeedBackBtnTap");
+		SwitchToNext("FeedBackList");
+		StoreLoad(Ext.getCmp("FeedBackListMain").getStore(), 1, {
+			"AppId" : "6",
+		});
 	},
 });
