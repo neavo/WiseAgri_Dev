@@ -42,7 +42,7 @@ Ext.define("Project.view.QnAView.PostQnA", {
 					}, {
 						id : "QnACategoryId",
 						xtype : "textfield",
-						name : "CategoryId",
+						name : "QnACategoryId",
 						hidden : true,
 					},
 				],

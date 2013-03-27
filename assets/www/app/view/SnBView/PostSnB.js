@@ -77,7 +77,7 @@ Ext.define("Project.view.SnBView.PostSnB", {
 					}, {
 						id : "SnBCategoryId",
 						xtype : "textfield",
-						name : "CategoryId",
+						name : "SnBCategoryId",
 						hidden : true,
 					},
 				],
