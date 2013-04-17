@@ -24,8 +24,8 @@ Ext.define("Project.controller.HomeView.HomeView", {
 				if (Data[k] && Data[k]["CategoryId"]) {
 					var Item = Ext.create("Ext.Container", {
 							Data : Data[k],
-							width : Ext.Viewport.getWindowWidth() * 0.33,
-							height : Ext.Viewport.getWindowWidth() * 0.33,
+							width : Ext.Viewport.getWindowWidth() * 0.3,
+							height : Ext.Viewport.getWindowWidth() * 0.3,
 							html : "<img class = HomeViewIcon src = " + Data[k]["CategoryIconUrl"] + " />",
 							listeners : {
 								tap : {
@@ -87,8 +87,8 @@ Ext.define("Project.controller.HomeView.HomeView", {
 				} else if (Data[k] && Data[k]["AppId"]) {
 					var Item = Ext.create("Ext.Container", {
 							Data : Data[k],
-							width : Ext.Viewport.getWindowWidth() * 0.33,
-							height : Ext.Viewport.getWindowWidth() * 0.33,
+							width : Ext.Viewport.getWindowWidth() * 0.3,
+							height : Ext.Viewport.getWindowWidth() * 0.3,
 							html : "<img class = HomeViewIcon src = " + Data[k]["AppIconUrl"] + " />",
 							listeners : {
 								tap : {
@@ -107,8 +107,8 @@ Ext.define("Project.controller.HomeView.HomeView", {
 					hContainer.add(Item);
 				} else {
 					hContainer.add(Ext.create("Ext.Container", {
-							width : Ext.Viewport.getWindowWidth() * 0.33,
-							height : Ext.Viewport.getWindowWidth() * 0.33,
+							width : Ext.Viewport.getWindowWidth() * 0.3,
+							height : Ext.Viewport.getWindowWidth() * 0.3,
 							html : "<img class = HomeViewIcon src = resources/image/NoIcon.png />",
 						}));
 				};
