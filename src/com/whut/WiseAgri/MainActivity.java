@@ -1,4 +1,4 @@
-package com.whut.WiseAgri_16;
+package com.whut.WiseAgri;
 
 import android.os.Bundle;
 import org.apache.cordova. * ;
