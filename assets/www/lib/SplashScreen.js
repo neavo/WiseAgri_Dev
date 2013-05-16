@@ -8,18 +8,19 @@ function HideSplashScreen() {
 	document.getElementById("SplashScreen").style.display = "none";
 };
 
-document.write("<div id = SplashScreen >"
-	 + " <img id = SplashScreenImage onclick = \"HideSplashScreen()\" src = " + SplashScreenImageSrc[0] + " style = \" height : 100%; width : 100%; \" />"
-	 + " <div>");
+document.write(""
+	 + "<div id = 'SplashScreen' onclick = 'HideSplashScreen()' >"
+	 + "	<img id = 'SplashScreenImage' src = '" + SplashScreenImageSrc[0] + "' style = 'height : 100%; width : 100%;' />"
+	 + "</div>");
 
-var key = 2;
-var handle = setInterval(function () {
-		var Src = SplashScreenImageSrc[key - 1];
+var Key = 1;
+var IntervalHandle = setInterval(function () {
+		var Src = SplashScreenImageSrc[Key];
 		if (Src) {
 			document.getElementById("SplashScreenImage").src = Src;
-			key = key + 1;
+			Key = Key + 1;
 		} else {
 			document.getElementById("SplashScreen").style.display = "none";
-			clearInterval(handle);
+			clearInterval(IntervalHandle);
 		};
 	}, 3000);

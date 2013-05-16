@@ -1,7 +1,7 @@
 Ext.application({
-	name : "Project",
+	name: "Project",
 
-	requires : [
+	requires: [
 		"Ext.Toolbar",
 		"Ext.MessageBox",
 		"Ext.data.Store",
@@ -10,29 +10,28 @@ Ext.application({
 		"Ext.field.Select",
 		"Ext.dataview.List",
 		"Ext.field.TextArea",
-		"Ext.carousel.Carousel",	
-	],
+		"Ext.carousel.Carousel"],
 
-	models : [
-		"FeedBackObject",
-		"CategoryObejct",
-		"NewsObejct",
+	models: [
 		"SnBObejct",
 		"QnAObejct",
+		"NewsObejct",
 		"ExpertObejct",
-	],
+		"FeedBackObject",
+		"CategoryObejct",
+		"BusinessCardObject"],
 
-	stores : [
-		"FeedBackList",
-		"RootCategory",
-		"ChildCategory",
-		"NewsList",
-		"SnBList",
+	stores: [
 		"QnAList",
+		"SnBList",
+		"NewsList",
 		"ExpertList",
-	],
+		"RootCategory",
+		"FeedBackList",
+		"ChildCategory",
+		"BusinessCardList"],
 
-	views : [
+	views: [
 		"Widget.PrevBtn", "Widget.NextBtn", "Widget.ShareBtn",
 		"Widget.FeedBackBtn", "Widget.OrderBtn", "Widget.OrderOKBtn",
 		"Widget.OrderCancelBtn", "Widget.PostSnBOKBtn", "Widget.PostSnBCancelBtn",
@@ -45,12 +44,13 @@ Ext.application({
 		"NewsView.NewsList", "NewsView.NewsDetail",
 		"SnBView.SnBList", "SnBView.SnBDetail", "SnBView.PostSnB",
 		"QnAView.QnAList", "QnAView.QnADetail", "QnAView.PostQnA",
+		"BusinessCard.BusinessCardList", "BusinessCard.BusinessCardDetail",
 		"ExpertView.ExpertList", "ExpertView.ExpertDetail",
+		"AgriWeather.AgriWeather",
 
-		"MainContainer",
-	],
+		"MainContainer"],
 
-	controllers : [
+	controllers: [
 		"Widget.PrevBtn", "Widget.NextBtn", "Widget.ShareBtn",
 		"Widget.FeedBackBtn", "Widget.OrderBtn", "Widget.OrderOKBtn",
 		"Widget.OrderCancelBtn", "Widget.PostSnBOKBtn", "Widget.PostSnBCancelBtn",
@@ -63,11 +63,11 @@ Ext.application({
 		"SnBView.SnBList",
 		"QnAView.QnAList",
 		"ExpertView.ExpertList",
+		"BusinessCard.BusinessCardList",
 
-		"MainController",
-	],
+		"MainController"],
 
-	launch : function () {
+	launch: function() {
 		Ext.Viewport.add(Ext.create("Project.view.MainContainer"));
 	},
 });

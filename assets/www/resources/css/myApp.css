@@ -315,6 +315,51 @@
 }
 
 /*
+	企业名片页面样式
+*/
+.BusinessCardName {
+	text-align : left; font-size : 0.85em; line-height : 1.1em;
+	height : 2.2em; padding-left : 0.9em; margin-bottom : 0.2em; overflow : hidden;
+}
+.BusinessCardIconUrl {
+	float : left; width : 3.5em; height : 3.5em;
+	margin-bottom : 0.5em; -webkit-border-radius : 0.25em;
+}
+.BusinessCardMainBusiness {
+	text-align : left; font-size : 0.65em; color :  #808080;
+	padding-left : 1.2em; overflow : hidden;
+}
+
+/*
+	专家详细页面样式
+*/
+.BusinessCardDetailName {
+	color : #000000;
+   	text-align : center;
+	padding-top : 0.5em;
+	padding-left : 1.5em;
+	padding-right : 1.5em;
+   	font-size : 1.1em;
+}
+.BusinessCardDetailImage {
+	max-width : 97.5%;
+	display : block;
+	margin : auto;
+	border : 1.5px solid #33B5E5;
+	-webkit-border-radius : 0.25em;
+}
+.BusinessCardDetailContent {
+	width : 97.5%;
+	font-size : 0.9em;
+	letter-spacing: 0.1em;
+	line-height : 1.3em;
+	display : block;
+	margin : auto;
+	text-align : justify;
+	text-justify : inter-ideograph;
+}
+
+/*
 	专家列表页面样式
 */
 .ExpertListIcon {
@@ -371,9 +416,17 @@
 }
 
 /*
-	测试用边框
+	农业天气页面样式
 */
-.TestBorder {
-	height : 80%;
-	border : 1px solid #000000;
+.AgriWeatherTitle {
+	color : #000000; font-size : 1.1em; text-align : center; 
+	padding-top : 0.5em; padding-left : 1.5em; padding-right : 1.5em;
+}
+.AgriWeatherImage {
+	float: right; padding: 0.75em 0.5em 0 0;
+	width : 25%; display : block; margin : auto;
+}
+.AgriWeatherContent {
+	font-size : 0.9em; letter-spacing: 0.1em; line-height : 1.3em;
+	display : block; margin: 0 0 0 0.5em ; text-align : justify;
 }

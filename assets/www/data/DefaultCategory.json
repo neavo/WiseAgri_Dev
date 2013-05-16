@@ -32,7 +32,7 @@
 	"CategoryId": "1150",
 	"CategoryName": "名企名人",
 	"CategoryIconUrl": "data/DefaultCategory/07.png",
-	"CategoryType": "NewsCategory",
+	"CategoryType": "BusinessCard",
 }, {
 	"CategoryId": "1151",
 	"CategoryName": "便民服务",
@@ -42,5 +42,5 @@
 	"CategoryId": "1152",
 	"CategoryName": "农业气象",
 	"CategoryIconUrl": "data/DefaultCategory/09.png",
-	"CategoryType": "NewsCategory",
+	"CategoryType": "AgriWeather",
 }, ]
