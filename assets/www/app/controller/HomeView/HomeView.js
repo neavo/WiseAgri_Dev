@@ -245,9 +245,9 @@ Ext.define("Project.controller.HomeView.HomeView", {
 								DB.AgriWeather.WindLevelThis = WeatherInfo.fl1;
 								DB.AgriWeather.WindLevelNext = WeatherInfo.fl2;
 								DB.AgriWeather.WindLevelThir = WeatherInfo.fl3;
-								DB.AgriWeather.WeatherIconThis = "./resources/Weather/d" + ((parseInt(WeatherInfo.img1) < 10) ? ("0" + WeatherInfo.img1) : WeatherInfo.img1) + ".gif";
-								DB.AgriWeather.WeatherIconNext = "./resources/Weather/d" + ((parseInt(WeatherInfo.img2) < 10) ? ("0" + WeatherInfo.img2) : WeatherInfo.img2) + ".gif";
-								DB.AgriWeather.WeatherIconThir = "./resources/Weather/d" + ((parseInt(WeatherInfo.img3) < 10) ? ("0" + WeatherInfo.img3) : WeatherInfo.img3) + ".gif";
+								DB.AgriWeather.WeatherIconThis = "resources/Weather/d" + ((parseInt(WeatherInfo.img1) < 10) ? ("0" + WeatherInfo.img1) : WeatherInfo.img1) + ".gif";
+								DB.AgriWeather.WeatherIconNext = "resources/Weather/d" + ((parseInt(WeatherInfo.img2) < 10) ? ("0" + WeatherInfo.img2) : WeatherInfo.img2) + ".gif";
+								DB.AgriWeather.WeatherIconThir = "resources/Weather/d" + ((parseInt(WeatherInfo.img3) < 10) ? ("0" + WeatherInfo.img3) : WeatherInfo.img3) + ".gif";
 							},
 						});
 					},
