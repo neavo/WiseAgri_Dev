@@ -22,7 +22,7 @@ Ext.define("Project.controller.BusinessCard.BusinessCardList", {
 				var Data = ResponseObject["0"];
 				var Content = "<div style = 'background : #FFFFFF; margin-top : 0.25em; -webkit-border-radius : 0.25em; border : 1px solid #808080;'>";
 				if (Data.BusinessCardName != "") {
-					Content = Content + "<div class = BusinessCardDetailName>" + Data.BusinessCardName + "</div>";
+					Content = Content + "<div class = BusinessCardDetailName>" + Data.BusinessCardName + "</div>" + "<HR width = 100% color = #FFFFFF size = 1 noShade>";
 				};
 				if (Data.BusinessCardContacter != "") {
 					Content = Content + "<div class = BusinessCardDetailContent>" + "联系人：" + Data.BusinessCardContacter + "</div>" + "<div style = 'height : 0.25em'></div>";

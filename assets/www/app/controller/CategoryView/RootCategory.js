@@ -71,7 +71,7 @@ Ext.define("Project.controller.CategoryView.RootCategory", {
 			Ext.getCmp("AgriWeatherTop").setTitle(Data.CategoryName);
 			var Content = "<div style = 'background : #FFFFFF; margin-top : 0.25em; -webkit-border-radius : 0.25em; border : 1px solid #808080;'>";
 			if (DB.AgriWeather.WeatherThis != "") {
-				Content = Content + "<div class = AgriWeatherTitle>今日气象</div>";
+				Content = Content + "<div class = AgriWeatherTitle>今日气象</div>" + "<HR width = 100% color = #FFFFFF size = 1 noShade>";
 			};
 			if (DB.AgriWeather.WeatherIconThis != "") {
 				Content = Content + "<img class = AgriWeatherImage src = " + DB.AgriWeather.WeatherIconThis + " />" + "<div style = 'height : 0.25em'></div>";
@@ -92,7 +92,7 @@ Ext.define("Project.controller.CategoryView.RootCategory", {
 
 			Content = Content + "<div style = 'background : #FFFFFF; margin-top : 0.25em; -webkit-border-radius : 0.25em; border : 1px solid #808080;'>";
 			if (DB.AgriWeather.WeatherNext != "") {
-				Content = Content + "<div class = AgriWeatherTitle>明日气象</div>";
+				Content = Content + "<div class = AgriWeatherTitle>明日气象</div>" + "<HR width = 100% color = #FFFFFF size = 1 noShade>";
 			};
 			if (DB.AgriWeather.WeatherIconNext != "") {
 				Content = Content + "<img class = AgriWeatherImage src = " + DB.AgriWeather.WeatherIconNext + " />" + "<div style = 'height : 0.25em'></div>";
@@ -113,7 +113,7 @@ Ext.define("Project.controller.CategoryView.RootCategory", {
 
 			Content = Content + "<div style = 'background : #FFFFFF; margin-top : 0.25em; -webkit-border-radius : 0.25em; border : 1px solid #808080;'>";
 			if (DB.AgriWeather.WeatherThir != "") {
-				Content = Content + "<div class = AgriWeatherTitle>后日气象</div>";
+				Content = Content + "<div class = AgriWeatherTitle>后日气象</div>" + "<HR width = 100% color = #FFFFFF size = 1 noShade>";
 			};
 			if (DB.AgriWeather.WeatherIconThir != "") {
 				Content = Content + "<img class = AgriWeatherImage src = " + DB.AgriWeather.WeatherIconThir + " />" + "<div style = 'height : 0.25em'></div>";
